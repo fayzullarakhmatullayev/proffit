@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffit</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+     
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/progressbar.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+    
+  <header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-menu__list">
+                    <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                    <ul class="nav-dropdown nav-dropdown-one">
+                        <li class="nav-dropdown__list">
+                            <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="fuel.html" class="nav-dropdown__link">Контроль топлива </a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="outsource.html" class="nav-dropdown__link">Аутсорсинг мониторинга </a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="direction.html" class="nav-dropdown__link">Экономичное вождение </a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Контроль выполнения работ</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="monitoring.html" class="nav-dropdown__link">Видеомниторинг на транспорте</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="taxografiya.html" class="nav-dropdown__link">Тахография</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">ESG. Устойчивое развитие парка</a>
+                            
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">1С модули управления парком</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">IQ Freeze</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Скоринг</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Телемедосмотр</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Консалтин</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Лизинговая/страховая телематика</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu__list">
+                    <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        Для кого <i class="fa fa-chevron-down"></i></a>
+                    <ul class="nav-dropdown nav-dropdown-two">
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="commercial.html" class="nav-dropdown__link">Легкий коммерческий транспорт </a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Перевозки топлива</a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Сельское хозяйство</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Спецтехника</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Пассажирский транспорт</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Рефрижераторный транспорт</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Скорые службы</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Стационарные объекты </a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu__list">
+                    <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        Оборудование <i class="fa fa-chevron-down"></i></a>
+                    <ul class="nav-dropdown">
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Датчик уровня топлива</a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Контроль нагрузки на ось</a>
+                        </li>  
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Контроль сохранности груза</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Контроль давления в шинах</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Контроль работы механизмов</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Считывание can</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link">Тахографы</a>
+                        </li>
+                        <li class="nav-dropdown__list">
+                            <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu__list">
+                    <a href="blog.html" class="nav-menu__link">Блог</a>
+                </li>
+                <li class="nav-menu__list">
+                    <a href="about.html" class="nav-menu__link">О компании</a>
+                </li>
+                <li class="nav-menu__list">
+                    <a href="contact.html" class="nav-menu__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="nav-contact">
+                <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
+                <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+            </div>
+        </nav>
+    </div>
+  </header>
+    
+    <section class="intro taxografiya-intro">
+        <div class="container">
+            <div class="solutions-intro-wrapper">
+                <div class="intro-content">
+                    <h1 class="intro-content__title outsource-intro__title">
+                        тахография на 100%
+                    </h1>  
+                    <ul class="fuel-intro__menu">
+                        <li class="fuel-intro__list monitoring-intro__list">
+                            Полный комплекс услуг по тахографии.
+                            Работаем как с юридическими,
+                            так и с физическими лицами
+                        </li>
+                    </ul>
+                    <a href="#consult" class="intro-content__btn fuel-intro__btn">Консультация</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product">
+        <div class="container">
+            <div class="title">ПРОДУКЦИЯ И <span class="title-inner">РЕШЕНИЯ</span></div>
+            <div class="product-wrapper">
+              <div class="product-media">
+                <a href="#first" class="product-media__item map-active">
+                  <img class="product-media__img" src="./images/product-img_03.jpg" alt="">
+                  <div class="product-media__text">ТАХОГРАФЫ</div>
+                </a>
+                <a href="#second" class="product-media__item">
+                  <img class="product-media__img" src="./images/product-img_06.jpg" alt="">
+                  <div class="product-media__text">КАРТЫ ТАХОГРАФА</div>
+                </a>
+                <a href="#third" class="product-media__item">
+                  <img class="product-media__img" src="./images/product-img_10.jpg" alt="">
+                  <div class="product-media__text">АНАЛИЗ ДАННЫХ С ТАХОГРАФА</div>
+                </a>
+              </div>
+              <div class="product-content">
+                <div class="product-content__item map-active" id="first">
+                  <div class="product-content__item-title">ТАХОГРАФЫ</div>
+                  <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                  <div class="advice-blog__item-ul">
+                    <div class="advice-blog__item-list"><span></span>
+                      Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO 3283 (СКЗИ, для перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO Continental 1381 (ЕСТР, для международных перевозок)
+                    </div>
+                  </div>
+                  <div class="product-content__item-subtitle">Выгодные цены</div>
+                  <div class="product-content__item-text">
+                    Приятные цены на установку тахографа под ключ - калибровка и активация 
+                    включены в стоимость
+                  </div>
+                  <a href="taxografs.html" class="intro-content__btn fuel-intro__btn">Подробнее</a>
+                </div>
+                <div class="product-content__item" id="second">
+                  <div class="product-content__item-title">КАРТЫ ТАХОГРАФА</div>
+                  <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                  <div class="advice-blog__item-ul">
+                    <div class="advice-blog__item-list"><span></span>
+                      Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO 3283 (СКЗИ, для перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO Continental 1381 (ЕСТР, для международных перевозок)
+                    </div>
+                  </div>
+                  <div class="product-content__item-subtitle">Выгодные цены</div>
+                  <div class="product-content__item-text">
+                    Приятные цены на установку тахографа под ключ - калибровка и активация 
+                    включены в стоимость
+                  </div>
+                  <a href="#" class="intro-content__btn fuel-intro__btn">Подробнее</a>
+                </div>
+                <div class="product-content__item" id="third">
+                  <div class="product-content__item-title">АНАЛИЗ ДАННЫХ С ТАХОГРАФА</div>
+                  <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                  <div class="advice-blog__item-ul">
+                    <div class="advice-blog__item-list"><span></span>
+                      Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO 3283 (СКЗИ, для перевозок по РФ)
+                    </div>
+                    <div class="advice-blog__item-list"><span></span>
+                      VDO Continental 1381 (ЕСТР, для международных перевозок)
+                    </div>
+                  </div>
+                  <div class="product-content__item-subtitle">Выгодные цены</div>
+                  <div class="product-content__item-text">
+                    Приятные цены на установку тахографа под ключ - калибровка и активация 
+                    включены в стоимость
+                  </div>
+                  <a href="#" class="intro-content__btn fuel-intro__btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="taxo-consult">
+      <div class="container">
+        <div class="taxo-consult__wrapper">
+          <div class="taxo-consult__content">
+            <div class="taxo-consult__content-title">
+              Не хочу вникать, 
+              проконсультируйте
+            </div>
+            <div class="taxo-consult__content-text">
+              Расскажем все нюансы, поможем с выбором
+            </div>
+            <a href="tel:88003332474" class="taxo-consult__content-phone"><img class="taxo-consult__content-icon" src="./icons/phone-icon_03.png" alt="phone-icon">8 800 333 24 74</a>
+          </div>
+          <div class="taxo-consult__media">
+            <img class="taxo-consult__media-img" src="./images/phone-img_14.png" alt="phone-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="taxografiya">
+      <div class="container">
+        <div class="title">тахография на 
+          <span class="title-inner">100% это:</span></div>
+          <div class="taxografiya-content">
+            <div class="taxografiya-content__item">
+              <img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="taxografiya-content-icon">
+              <div class="taxografiya-content__text">
+                <span class="taxografiya-content__text-inner">Технически корректное оснащение:</span>
+                 работающий, откалиброванный тахограф с действующим блоком СКЗИ (или тахограф ЕСТР), актуальная 
+                карта водителя
+              </div>
+            </div>
+            <div class="taxografiya-content__item">
+              <img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="taxografiya-content-icon">
+              <div class="taxografiya-content__text">
+                <span class="taxografiya-content__text-inner">Эксплуатация транспорта в рамках норм закона</span>
+                 для снижения аварийности и избежания штрафов
+              </div>
+            </div>
+            <div class="taxografiya-content__item">
+              <img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="taxografiya-content-icon">
+              <div class="taxografiya-content__text">
+                <span class="taxografiya-content__text-inner">Выгрузка раз в 28 дней DDD</span>
+                 файлов для проверяющих органов
+              </div>
+            </div>
+            <div class="taxografiya-content__item">
+              <img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="taxografiya-content-icon">
+              <div class="taxografiya-content__text">
+                <span class="taxografiya-content__text-inner">Считывание, расшифровка и анализ данных с карт тахографа и тахографов</span>
+                 - использование еще одной аналитической отчетности с транспорта
+                для принятия грамотных управленченских решений
+              </div>
+            </div>
+          </div>
+          <a href="#" class="intro-content__btn fuel-intro__btn">Консультация</a>
+      </div>
+    </section>
+    
+    <section class="must">
+      <div class="container">
+        <div class="title">НА КАКОЙ ТРАНСПОРТ <span class="title-inner">ТАХОГРАФ ОБЯЗАТЕЛЕН</span></div>
+        <div class="must-wrapper">
+          <div class="must-media">
+            <img src="./icons/taxo-icon_18.png" alt="taxo-icon" class="must-media__icon">
+          </div>
+          <div class="must-content">
+            <div class="taxografiya-content__text must-content__text">
+              <span class="taxografiya-content__text-inner">Категория M2</span>
+               — Транспортные средства, используемые для перевозки пассажиров,имеющие, помимо места водителя, более 
+              восьми мест для сидения, технически допустимая максимальная масса которых не превышает 5 т.
+            </div>
+          
+            <div class="taxografiya-content__text must-content__text">
+              <span class="taxografiya-content__text-inner">Категория M3</span>
+               — Транспортные средства, используемые для перевозки пассажиров, имеющие, помимо места водителя, более
+              восьми мест для сидения, технически допустимая максимальная масса которых превышает 5 т
+            </div>
+            <div class="taxografiya-content__text must-content__text">
+              <span class="taxografiya-content__text-inner">Категория N2</span>
+               — Транспортные средства, предназначенные для перевозки грузов, имеющие технически допустимую 
+              максимальную массу свыше 3,5 т, но не более 12 т.
+            </div>
+            <div class="taxografiya-content__text must-content__text">
+              <span class="taxografiya-content__text-inner">Категория N3</span>
+               — Транспортные средства, предназначенные для перевозки грузов, имеющие технически допустимую
+              максимальную массу более 12 т.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="why">
+      <div class="container">
+        <div class="title">почему <span class="title-inner">мы</span></div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="why-content">
+              <img src="./icons/taxo-services_27.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                ОФИЦИАЛЬНАЯ МАСТЕРСКАЯ
+              </div>
+              <div class="why-content__text">
+                Лицензия ФСБ №0003052 от 30.05.2014
+                Клейма №РФ0075, RUS337
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="why-content">
+              <img src="./icons/taxo-services_22.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА
+              </div>
+              <div class="why-content__text">
+                Оснащено более 45 000 ТС, выдано 
+                более 150 000 карт тахографа
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="why-content">
+              <img src="./icons/taxo-services_24.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                НАС РЕКОМЕНДУЮТ. НАМ ДОВЕРЯЮТ
+              </div>
+              <div class="why-content__text">
+                Более 70% новых клиентов приходит 
+                к нам по рекомендациям
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-text">
+          ООО ПКФ «Проффит Консалтинг» — крупнейший поставщик тахографических услуг в республике Татарстан, официальный представитель брендов
+          тахографической продукции, допущенных на территории РФ.Состоим в перечне тахографических мастерских ФБУ «Росавтотранс», в реестре операторов
+          персональных данных Роскомнадзора.
+        </div>
+        <div class="why-text">  
+          Профессионально и оперативно обслуживаем парки любого масштаба от 1 до 8000 единиц техники
+        </div>
+      </div>
+    </section>
+    
+    <section class="partners taxo-partners">
+      <div class="container">
+          <div class="partners-blog">
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon1.png" alt="partners-icon1" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon2.png" alt="partners-icon2" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon3.png" alt="partners-icon3" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon4.png" alt="partners-icon4" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon5.png" alt="partners-icon5" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon6.png" alt="partners-icon6" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon7.png" alt="partners-icon7" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon8.png" alt="partners-icon8" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon9.png" alt="partners-icon9" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
+              </div>
+              <div class="partners-blog__items">
+                  <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <div class="taxo-contact" id="consult">
+    <div class="container">
+      <div class="taxo-contact__blog">
+        <div class="taxo-contact__content">
+          <div class="taxo-contact__content-title">Свяжитесь с нами</div>
+          <a href="tel:88003332474" class="taxo-contact__content-phone">8 800 333 24 74</a>
+          <div class="taxo-contact__content-subtitle">
+            г. Набережные Челны
+          </div>
+          <div class="taxo-contact__content-text">
+            Казанский просп., 224/9, бокс №8
+          </div>
+          <div class="taxo-contact__content-text">
+            Индустриальный проезд, 62/28, здание КТС
+          </div>
+          <div class="taxo-contact__content-subtitle">
+            г. Казань
+          </div>
+          <div class="taxo-contact__content-text">
+            Тэцевская ул., 34
+          </div>
+        </div>
+        <div class="taxo-contact__media">
+          <img class="taxo-contact__media-img" src="./images/taxo-contact_33.png" alt="taxo-contact">
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="footer-blog">
+                    <a href="solutions.html" class="footer-blog__title">Решения</a>
+                    <ul class="footer-blog__menu">
+                          <li class="footer-blog__list">
+                            <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="fuel.html" class="footer-blog__link">Контроль топлива</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="outsource.html" class="footer-blog__link">Аутсорсинг мониторинга</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="direction.html" class="footer-blog__link">Экономичное вождение</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль выполнения работ</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Видеомониторинг на транспорте</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">АнтиДТП</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="taxografiya.html" class="footer-blog__link">Тахография</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Электронная пломбировка</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">1С модули управления парком</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">IQ FREEZE</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Скоринг</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Телемедосмотр</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Консалтинг</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Лизинговая/страховая телематика</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="footer-blog">
+                    <a href="industries.html" class="footer-blog__title">Для кого</a>
+                    <ul class="footer-blog__menu">
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Грузовой транспорт</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="commercial.html" class="footer-blog__link">Легкий коммерческий транспорт</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Перевозки топлива</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Сельское хозяйство</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Спецтехника</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Пассажирский транспорт</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Рефрижераторный транспорт</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Скорые службы</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Стационарные объекты</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">ESG</a>
+                          </li>  
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="footer-blog">
+                    <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
+                    <ul class="footer-blog__menu">
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Бортовой контроллер</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Датчик уровня топлива</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль нагрузки на ось</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль давления в шинах</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Контроль работы механизмов</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Считывание can</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="" class="footer-blog__link">Прочее</a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="footer-blog footer-blog2">
+                    <ul class="footer-blog__menu">
+                          <li class="footer-blog__list">
+                            <a href="blog.html" class="footer-blog__link2">Блог</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="about.html" class="footer-blog__link2">О компании</a>
+                          </li>
+                          <li class="footer-blog__list">
+                            <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                          </li>
+                    </ul>
+                    <div class="footer-blog__contact">
+                        <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                        <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+                        <div class="footer-blog__social">
+                              <a href="#" class="footer-blog__social-link">
+                                <img src="./icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                              </a>
+                              <a href="#" class="footer-blog__social-link">
+                                <img src="./icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="footer-copy__content">
+              <div class="footer-copy__text">Карта сайта</div>
+              <div class="footer-copy__text">© 2021 Компания PROFFIT</div>
+              <div class="footer-copy__text">О защите персональных данных</div>
+            </div>
+          <a href="/" class="footer-copy__logo"><img src="./images/logo.png" alt="logo" class="footer-copy__img"></a>              
+        </div>
+    </div>
+  </footer>
+    
+  
+  </body>
+  </html>

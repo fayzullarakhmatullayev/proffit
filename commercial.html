@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffit</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <script src="./jquery/jquery-3.5.1.min.js"></script>   
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/progressbar.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-menu__list">
+                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list">
+                                <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="fuel.html" class="nav-dropdown__link">Контроль топлива </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="outsource.html" class="nav-dropdown__link">Аутсорсинг мониторинга </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="direction.html" class="nav-dropdown__link">Экономичное вождение </a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль выполнения работ</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="monitoring.html" class="nav-dropdown__link">Видеомниторинг на транспорте</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="taxografiya.html" class="nav-dropdown__link">Тахография</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">ESG. Устойчивое развитие парка</a>
+                                
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">1С модули управления парком</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">IQ Freeze</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Скоринг</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Телемедосмотр</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Консалтин</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Лизинговая/страховая телематика</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                            Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="commercial.html" class="nav-dropdown__link">Легкий коммерческий транспорт </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Перевозки топлива</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Сельское хозяйство</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Спецтехника</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Пассажирский транспорт</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Рефрижераторный транспорт</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Скорые службы</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Стационарные объекты </a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                            Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Датчик уровня топлива</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль нагрузки на ось</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль сохранности груза</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль давления в шинах</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль работы механизмов</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Считывание can</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Тахографы</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="blog.html" class="nav-menu__link">Блог</a>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="about.html" class="nav-menu__link">О компании</a>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
+                    <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="commercial-intro">
+        <div class="container">
+            <div class="subtitle">Управление автопарком 2021</div>
+            <div class="title">
+                Легкий коммерческий транспорт
+            </div>
+            <div class="commercial-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                Снижение затрат на ремонты
+            </div>
+            <div class="commercial-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                Повышение производительности парка
+            </div>
+            <div class="commercial-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                Соблюдение РТО и требований закона к ТС
+            </div>
+            <a href="#consult" class="intro-content__btn fuel-intro__btn commercial-intro__btn">Консультация</a>
+        </div>
+    </section>
+    
+    <section class="withus">
+        <div class="container">
+            <div class="withus-top">
+                <div class="withus-top__text">
+                    <span class="withus-top__span">Легкий коммерческий транспорт</span>
+                     — наиболее часто используемый вид техники в сегменте малого и среднего бизнеса. В основном задействован в перевозке малотоннажных грузов в условиях города и трассы. 
+                    Основными показателями работы транспорта являются контроль местонахождения, соблюдение и выполнения маршрутов, контроль геозон, скоростного режима, манера вождения водителя и сохранность перевозимого груза
+                </div>
+            </div>
+            <div class="withus-blog">
+                <div class="title">
+                    будьте с нами 
+                </div>
+                <ul class="advice-blog__item-ul">
+                    <li class="advice-blog__item-list"><span></span>
+                        Планируйте оптимальные маршруты и контролируйте их выполнение
+                    </li>
+                    <li class="advice-blog__item-list"><span></span>
+                        Улучшайте клиентский сервис: информация о местонахождении груза в реальном времени
+                    </li>
+                    <li class="advice-blog__item-list"><span></span>
+                        Снижайте аварийность, повышайте качество вождения
+                    </li>
+                    <li class="advice-blog__item-list"><span></span>
+                        Повышайте эффективность бизнес-процессов
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="answer answer2">
+        <div class="container">
+            <div class="title"><span class="title-inner">экспертная подборка </span>решений для вашей отрасли</div>
+            
+            <div class="contact-tab answer-tab">
+                <div class="contact-tab__nav">
+                    <a href="#map1" class="contact-tab__btn answer-tab__btn answer2-btn map-active" data-toggle="tab">1   Мониторинг</a>
+                    <a href="#map2" class="contact-tab__btn answer-tab__btn answer2-btn" data-toggle="tab">2     Скоринг</a>
+                    <a href="#map3" class="contact-tab__btn answer-tab__btn answer2-btn" data-toggle="tab">3     АнтиДТП</a>
+                    <a href="#map4" class="contact-tab__btn answer-tab__btn answer2-btn" data-toggle="tab">4 Теле
+                        медосмотр</a>
+                    <a href="#map5" class="contact-tab__btn answer-tab__btn answer2-btn" data-toggle="tab">5 Страховая
+                        телематика</a>
+                </div>    
+                <div class="contact-tab__body answer-tab__body  map-active" id="map1">
+                    <div class="answer-tab__content">
+                        <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                        <div class="answer-tab__inner answer-inner2">
+                            <div class="answer-subtitle2">мониторинг транспорта  и контролЬ топлива</div>
+                            <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                            <div class="advice-blog__item-ul">
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    исключение махинаций с топливом и работой на технике
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    повышение экономичности вождения, сокращение пережогов
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    предотвращение повышенного износа, сохранение гарантии на технику
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение простоев, перепробегов
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение затрат на ГСМ, ТО и ремонты
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    рост производительности труда и дисциплины персонала   
+                                </div>                           
+                            </div>
+                            <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-tab__body answer-tab__body" id="map2">
+                    <div class="answer-tab__content">
+                        <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                        <div class="answer-tab__inner answer-inner2">
+                            <div class="answer-subtitle2">Умная оценка стиля вождения
+                            </div>
+                            <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                            <div class="advice-blog__item-ul">
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    выявление опасных тенденций
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    корректировка манеры езды
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    корректировка систем мотивации водителей
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение числа ДТП и аварийных ситуаций
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    повышение общей безопасности перевозок 
+                                </div>                         
+                            </div>
+                            <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-tab__body answer-tab__body" id="map3">
+                    <div class="answer-tab__content">
+                        <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                        <div class="answer-tab__inner answer-inner2">
+                            <div class="answer-subtitle2 answer-subtitle3">Контроль состояния водителя и система помощи 
+                                для предотвращения ДТП на основе «машинного зрения» (ADAS)
+                                
+                            </div>
+                            <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                            <div class="advice-blog__item-ul">
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение числа ДТП
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение финансовых и юридических рисков от последствий ДТП
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    моментальное уведомление о нарушениях и опасных ситуациях
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    расширенный анализ профессионализма и компетенций сотрудников
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    получение спец условий от страховых компаний за рост уровня безопасности
+                                </div>                   
+                            </div>
+                            <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-tab__body answer-tab__body" id="map4">
+                    <div class="answer-tab__content">
+                        <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                        <div class="answer-tab__inner answer-inner2">
+                            <div class="answer-subtitle2">Дистанционный (онлайн) медосмотр водителей
+                            </div>
+                            <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                            <div class="advice-blog__item-ul">
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    повышение качества осмотров, исключение чел. фактора
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    снижение числа ЧС в рейсе/на предприятии
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    сокращение финансовых и юридических рисков
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    оптимизация количества медицинских рабочих мест
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    защита репутации предприятия
+                                </div>         
+                            </div>
+                            <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-tab__body answer-tab__body" id="map5">
+                    <div class="answer-tab__content">
+                        <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                        <div class="answer-tab__inner answer-inner2">
+                            <div class="answer-subtitle2">Дистанционный (онлайн) медосмотр водителей
+                            </div>
+                            <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                            <div class="advice-blog__item-ul">
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    выявление рисков и опасных тенденций вождения
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    снижение убыточности до 2,5 раз
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    исключение мошенничества
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    повышение уровня лояльности клиентов
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    исключение рисков нецелевого использования техники
+                                </div>
+                                <div class="advice-blog__item-list">
+                                    <span></span>
+                                    реконструкция обстоятельств ДТП и его «прозрачный» разбор
+                                </div>    
+                            </div>
+                            <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <div class="brands">
+        <div class="container">
+            <div class="title">
+                БЫСТРОЕ ВНЕДРЕНИЕ
+            </div>
+            <div class="brands-text">
+                Большой опыт реализации различных решений на Газели Next, УАЗ, ИЖ, фургоны Volkswagen Transporter, Scoda Fabia/Octavia, также на автомобили Lada Largus, Hyundai Porter и Hyundai H1, Mercedez Sprinter, Citroen Berlingo, Fiat Ducato, Ford Transit, Peugeot Expert, Isuzu NMR 85H и другие.
+            </div>
+            <div class="brands-blog">
+                <img src="./images/brands-img_13.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_24.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_16.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_32.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_18.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_10.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_41.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_21.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_38.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_27.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_29.png" alt="brands-img" class="brands-blog__img">
+                <img src="./images/brands-img_35.png" alt="brands-img" class="brands-blog__img">
+            </div>
+        </div>
+    </div>
+    
+    <div class="gazel">
+        <div class="container">
+            <div class="title">
+                ТЕХНИЧЕСКАЯ РЕАЛИЗАЦИЯ НА ТС
+            </div>
+            <div class="gazel-blog">
+                <div class="gazel-blog__content">
+                    <div class="gazel-blog__content-text">
+                        Помимо классической «точки на карте» и контроля топлива 
+                        посредством ДУТ, вы можете контролировать множество других 
+                        параметров для снижения затрат на содержание автопарка, 
+                        увеличения выработку и повышения безопасности. 
+                        Различные датчики (более 2000 видов) помогают осуществлять 
+                        тотальный контроль за техникой, персоналом и выполнением работ.  
+                    </div>
+                    <ul class="advice-blog__item-ul gazel-blog__ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            Широкий выбор готовых и проверенных комбинаций 
+                            для решения ваших задач
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            Официальные представители ведущих марок оборудования
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            Большой срок гарантии на оборудование
+                        </li>
+                    </ul>
+                    <div class="gazel-blog__content-text">
+                        Закажите бесплатную экспертизу на технике и получите 
+                        персональное коммерческое предложение, учитывающие 
+                        ваши задачи и бюджеты
+                    </div>
+                </div>
+                <div class="gazel-blog__media">
+                    <img src="./images/gazel-img_56.png" alt="gazel-img" class="gazel-blog__img">
+                    
+                    <div class="gazel-nav nav-1">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-2">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-3">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-4">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-5">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-6">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-7">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-8">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-9">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-10">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-11">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-12">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-13">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-14">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-15">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gazel-nav nav-16">
+                        <div class="gazel-nav__dot">
+                            <i class="fa fa-plus"></i>
+                            <div class="gazel-nav__content">
+                                <div class="gazel-nav__content-title">
+                                    Контроль ремня
+                                    безопасности
+                                </div>
+                                <div class="gazel-nav__content-text">
+                                    * не нужен, если есть
+                                    подключение к CAN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="consult" class="consult">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="consult-picture">
+                        <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="consult-assist">
+                      <div class="consult-assist__title">
+                          Консультация от эксперта
+                      </div>
+                      <div class="consult-assist__subtitle">
+                          Просто и понятно расскажем все нюансы
+                      </div>
+                  
+                    <form action="" class="consult-form">
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <input type="text" name="name" class="consult-form__name consult-form__input" placeholder="Имя*">
+                            </div>
+                        </div>
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <input type="text" name="phone" class="consult-form__phone consult-form__input" placeholder="Мобильный телефон*">
+                            </div>
+                        </div>
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий*"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="consult-form__wrapper consult-form__wrapper2">
+                            <div>
+                                <input type="checkbox" name="check" class="consult-form__check">
+                            </div>
+                            <div class="consult-form__text">Даю согласие на обработку <a class="consult-form__link" href="#">персональных данных</a></div>
+                        </div>
+                        <button class="consult-form__btn" type="submit">Позвоните мне</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-blog">
+                        <a href="solutions.html" class="footer-blog__title">Решения</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="fuel.html" class="footer-blog__link">Контроль топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="outsource.html" class="footer-blog__link">Аутсорсинг мониторинга</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="direction.html" class="footer-blog__link">Экономичное вождение</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль выполнения работ</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Видеомониторинг на транспорте</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">АнтиДТП</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="taxografiya.html" class="footer-blog__link">Тахография</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Электронная пломбировка</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">1С модули управления парком</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">IQ FREEZE</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Скоринг</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Телемедосмотр</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Консалтинг</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Лизинговая/страховая телематика</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-blog">
+                        <a href="industries.html" class="footer-blog__title">Для кого</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Грузовой транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="commercial.html" class="footer-blog__link">Легкий коммерческий транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Перевозки топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Сельское хозяйство</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Спецтехника</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Пассажирский транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Рефрижераторный транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Скорые службы</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Стационарные объекты</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">ESG</a>
+                              </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-blog">
+                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Бортовой контроллер</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Датчик уровня топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль нагрузки на ось</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль давления в шинах</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль работы механизмов</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Считывание can</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Прочее</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-blog footer-blog2">
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                              </li>
+                        </ul>
+                        <div class="footer-blog__contact">
+                            <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                            <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+                            <div class="footer-blog__social">
+                                  <a href="#" class="footer-blog__social-link">
+                                    <img src="./icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                                  </a>
+                                  <a href="#" class="footer-blog__social-link">
+                                    <img src="./icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="footer-copy__content">
+                  <div class="footer-copy__text">Карта сайта</div>
+                  <div class="footer-copy__text">© 2021 Компания PROFFIT</div>
+                  <div class="footer-copy__text">О защите персональных данных</div>
+                </div>
+              <a href="/" class="footer-copy__logo"><img src="./images/logo.png" alt="logo" class="footer-copy__img"></a>              
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

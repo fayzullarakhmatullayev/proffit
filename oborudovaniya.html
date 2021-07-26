@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffit</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/progressbar.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <script src="./jquery/jquery-3.5.1.min.js"></script>   
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/progressbar.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-menu__list">
+                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list">
+                                <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="fuel.html" class="nav-dropdown__link">Контроль топлива </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="outsource.html" class="nav-dropdown__link">Аутсорсинг мониторинга </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="direction.html" class="nav-dropdown__link">Экономичное вождение </a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль выполнения работ</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="monitoring.html" class="nav-dropdown__link">Видеомниторинг на транспорте</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="taxografiya.html" class="nav-dropdown__link">Тахография</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">ESG. Устойчивое развитие парка</a>
+                                
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">1С модули управления парком</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">IQ Freeze</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Скоринг</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Телемедосмотр</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Консалтин</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Лизинговая/страховая телематика</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                            Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="commercial.html" class="nav-dropdown__link">Легкий коммерческий транспорт </a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Перевозки топлива</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Сельское хозяйство</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Спецтехника</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Пассажирский транспорт</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Рефрижераторный транспорт</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Скорые службы</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Стационарные объекты </a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                            Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Датчик уровня топлива</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль нагрузки на ось</a>
+                            </li>  
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль сохранности груза</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль давления в шинах</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Контроль работы механизмов</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Считывание can</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link">Тахографы</a>
+                            </li>
+                            <li class="nav-dropdown__list">
+                                <a href="#" class="nav-dropdown__link nav-dropdown__link-all">Смотреть все<i class="fa fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="blog.html" class="nav-menu__link">Блог</a>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="about.html" class="nav-menu__link">О компании</a>
+                    </li>
+                    <li class="nav-menu__list">
+                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
+                    <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="oborod-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="oborod-intro__content">
+                        <div class="title">
+                            Более 2000 видов 
+                            <span class="title-inner">
+                                подключаемых 
+                                устройств
+                            </span>
+                        </div>
+                        <div class="oborod-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                            Широкий выбор готовых и проверенных 
+                            комбинаций для решения ваших задач
+                        </div>
+                        <div class="oborod-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                            Официальные представители ведущих
+                            марок оборудования
+                        </div>
+                        <div class="oborod-intro__list"><img src="./icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                            Большой срок гарантии на оборудование
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="oborod-intro__consult">
+                        <img src="./images/consult-header_03.png" alt="consult-header" class="oborod-intro__call">
+                        <ul class="advice-blog__item-ul">
+                            <li class="advice-blog__item-list oborod-intro__list2"><span></span>
+                                Расскажем преимущества различных марок
+                                оборудования именно под Ваши задачи, 
+                                предоставив реальный выбор по лучшей цене
+                            </li>
+                            <li class="advice-blog__item-list"><span></span>
+                                По возможности используем 
+                                уже установленное Вами оборудование
+                            </li>
+                            <a href="#consult" class="intro-content__btn oborod-intro__btn">Консультация</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod-menu">
+        <div class="container">
+            <div class="title">БОРТОВЫЕ <span class="title-inner">КОНТРОЛЛЕРЫ</span></div>
+            <nav class="oborod-nav">
+                <a href="#bitovoy" class="oborod-nav__link">Бортовые контроллеры</a>
+                <a href="#topliva" class="oborod-nav__link">Датчики уровня топлива</a>
+                <a href="#nagruzka" class="oborod-nav__link">Датчики нагрузки на ось</a>
+                <a href="#gruz" class="oborod-nav__link">Датчики сохранности груза</a>
+                <a href="#shina" class="oborod-nav__link">Датчики давления в шинах</a>
+                <a href="#passaj" class="oborod-nav__link">Датчики учета пассажиропотока</a>
+                <a href="#mexanizm" class="oborod-nav__link">Датчики контроля работы механизмов</a>
+                <a href="#can" class="oborod-nav__link">Считыватель CAN</a>
+                <a href="#svet" class="oborod-nav__link">Световые/звуковые индикаторы</a>
+                <a href="#sekret" class="oborod-nav__link">Секретные маячки</a>
+                <a href="#freeze" class="oborod-nav__link">IQ Freeze</a>
+                <a href="#radio" class="oborod-nav__link">Радиометки</a>
+                <a href="#taxograf" class="oborod-nav__link">Тахографы</a>
+                <a href="#display" class="oborod-nav__link">Дисплеи связи с водителем</a>
+            </nav>
+            <div class="oborod-menu__text">*Возможность проводного и беспроводного подключения</div>
+        </div>
+    </section>
+    
+    <section class="oborod" id="bitovoy">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__content">
+                    <div class="title">БОРТОВЫЕ <span class="title-inner">КОНТРОЛЛЕРЫ</span></div>
+                    <div class="oborod-blog__text">
+                        Основа мониторинга транспорта. Устройство ведет журнал передвижения транспортного средства, фиксирует и передает параметры его работы. Множество полезых функций, подключаемых датчиков, внешние/внутренние антенны.
+                    </div>
+                    <div class="oborod-blog__text">
+                        От заложенного в бортовом контроллере функционала зависит дальнейший апгрейд. Поэтому в силу невысокой разницы в цене рекомендуется брать контроллер "на вырост".
+                    </div>
+                    <div class="oborod-blog__text">
+                        При выборе контроллера важно учитывать ПО с которым будет работать оборудование (возможности, гибкость настройки под задачи, точность)
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <img src="./images/datchik-img_07.png" alt="datchik-img" class="oborod-blog__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod oborod-seriy" id="topliva">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__media">
+                    <img src="./images/datchik-img_11.png" alt="datchik-img" class="oborod-blog__img">
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">Датчики уровня 
+                         <span class="title-inner">топлива</span></div>
+                    <div class="oborod-blog__text">
+                        Идеально подходит для удаленного контроля уровня топлива 
+                        в конкретный момент времени, показывает изменения уровня топлива (сливы, заправки, утечки).
+                    </div>
+                    <div class="oborod-blog__text">
+                        Незаменим для автоматизации учета ГСМ.
+                    </div>
+                    <div class="oborod-blog__text">
+                        Может использоваться для расчета расхода топлива
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod oborod-white" id="nagruzka">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__content">
+                    <div class="title">ДАТЧИКИ НАГРУЗКИ 
+                         <span class="title-inner">НА ОСЬ</span></div>
+                    <div class="oborod-blog__text">
+                        Датчик нагрузки на ось позволяет в режиме онлайн контролировать реальную загрузку автомобиля и равномерное распределение тяжести по осям на транспорте 
+                        (где нет возможности получить эти данные по CAN шине)
+                    </div>
+                    <div class="oborod-blog__text">
+                        Ваши возможности:       
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            исключение штрафов за перегруз
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            предотвращение повышенного износа и поломки деталей 
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            ТС из-за перегруза
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            снижение расхода топлива
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            избежание конфликтов с заказчиком (порча груза, "потеря")
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            исключение перевозки левых грузов
+                        </li>
+                    </ul>    
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod oborod-white oborod-seriy" id="gruz">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">ДАТЧИКИ СОХРАННОСТИ 
+                         <span class="title-inner">ГРУЗА</span></div>
+                    <div class="oborod-blog__text">
+                        В зависимости от конкретной задачи используется:    
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик открытия закрытия дверей (проводные и беспроводные)
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчики наличия продукта в емкости/резервуаре
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик температуры
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            iq freeze
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            электронная пломба
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик "тряски"
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик влажности
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            сирена /сигнализация
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            и другие решения
+                        </li>
+                    </ul>    
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod oborod-white" id="shina">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__content">
+                    <div class="title">ДАТЧИКИ ДАВЛЕНИЯ 
+                         <span class="title-inner">В ШИНАХ</span></div>
+                    <div class="oborod-blog__text">
+                        Отслеживайте температуру и давление в шинах в режиме реального времени! Получайте уведомления о любых отклонениях для возможности оперативного реагирования.   
+                    </div>
+                    <div class="oborod-blog__text">
+                        Ваши возможности при использовании системы контроля давления в шинах:  
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            повышение срока службы шин
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            повышение ходимости шин и шансов на восстановление
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            снижение числа проколов покрышек
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            увеличение ресурса шин на 15-20%
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            сокращение расхода топлива до 7%
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            предупреждение аварий, вызванных проколом, взрывом шин
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            повышение безопасности рейсов (ТС, персонал, прочие участники дорожного движения)
+                        </li> 
+                    </ul>    
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod oborod-white oborod-seriy" id="passaj">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">ДАТЧИКИ УчетА 
+                         <span class="title-inner">пассажиропотока</span></div>
+                    <div class="oborod-blog__text">
+                        Множество различных решений для пассажирских перевозок 
+                        от датчика наличия пассажира до учета пассажиропотока.    
+                    </div>
+                    <div class="oborod-blog__text">
+                        С подсчетом количества пассажиров, привязкой к определенной остановке можно оптимизировать графики выхода машин 
+                        на линию, корректно планировать машруты и повышать рентабельность пассажирского предприятия   
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="mexanizm" class="oborod">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet2">
+                <div class="oborod-blog__content">
+                    <div class="title">ДАТЧИКИ КОНТРОЛЯ РАБОТЫ 
+                    <span class="title-inner">НАВЕСНЫХ МЕХАНИЗМОВ</span></div>
+                    <div class="oborod-blog__text">
+                        Вы можете видеть сколько было проведено манипуляций, место, продолжительность работ и другие параметры 
+                        по работе навесного оборудования.  
+                    </div>
+                    <div class="oborod-blog__text">
+                        Широкий выбор датчиков для различных задач:  
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик оборотов
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик подъема
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик холостого хода
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик давления
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик вращения
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчкик угла наклона
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            датчик приближения
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            и другие
+                        </li>
+                    </ul>    
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="can" class="oborod oborod-white oborod-seriy">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">Считывание 
+                         <span class="title-inner">CAN</span></div>
+                    <div class="oborod-blog__text">
+                        Всего 1 контроллер и опыт наших специалистов и вы сможете видеть самую точную информацию о разных параметрах работы вашего ТС.    
+                    </div>
+                    <div class="oborod-blog__text">
+                        Помимо обычных (скорость, пробег, моточасы, обороты двигателя, нагрузка на ось и пр.) список параметров может быть расширен исходя из Ваших задач: положение ремней безопасности, подъем кузова, температура двигателя, подьем ленивца, давление наддува турбин и пр. 
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="svet" class="oborod oborod-white">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet2">
+                <div class="oborod-blog__content">
+                    <div class="title">СВЕТОвые и звуковые 
+                         <span class="title-inner">индикаторы</span></div>
+                    <div class="oborod-blog__text">
+                        Специальные устройства для уведомления водителя
+                        о нарушении установленных норм вождения, состоянии рабочего оборудования.                           
+                    </div>
+                    <div class="oborod-blog__text">
+                        Огромное количество цветовых комбинаций и способов монтажа с двусторонней передачей данных 
+                    </div> 
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sekret" class="oborod oborod-white oborod-seriy">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">СЕКРЕТНЫЕ 
+                         <span class="title-inner title2-inner"> МАЯЧКИ</span></div>
+                    <div class="oborod-blog__text">
+                        Надежный, автономный, незаметный для злоумышленника передатчик местонахождения ТС.    
+                    </div>
+                    <div class="oborod-blog__text">
+                        Работа на батарейках, одна SIM карта, точная передача координат по запросу, режим аудио (запись всего, что происходит вокруг), передача данных по смс или в программу мониторинга
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="freeze" class="oborod">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet2">
+                <div class="oborod-blog__content">
+                    <div class="title">IQ FREEZE</div>
+                    <div class="oborod-blog__text">
+                        Система контроля перевозки температурных грузов 
+                        и управления парком рефрижераторной техники. Работает 
+                        с холодильными установками большинства производителей.  
+                    </div>
+                    <div class="oborod-blog__text">
+                        Ваши возможности: 
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            полное соответствие требованиям закона
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            выполнение требований заказчиков (X5, Магнит и пр.сети)
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            тотальный контроль сохранности скоропортящегося груза 
+                            с передачей данных всем заинтересованным лицам
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            оперативное реагирование на внештатные ситуации 
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            и отклонения температуры 
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            оптимизация парка рефрижераторной техники
+                        </li>
+                    </ul>    
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="radio" class="oborod oborod-white oborod-seriy">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">РАДИОметки  
+                         <span class="title-inner title2-inner"> (rfid/bLUETOOTH)</span></div>
+                    <div class="oborod-blog__text">
+                        Решение для контроля прицепного оборудования, прицепов.   
+                    </div>
+                    <div class="oborod-blog__text">
+                        Вы контролируете:
+                    </div>
+                    <ul class="advice-blog__item-ul">
+                        <li class="advice-blog__item-list"><span></span>
+                            к какому автомобилю или технике привязан прицеп
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            точное время и место сцепки/расцепки
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            время работы с конкретным прицепом/прицепным 
+                            оборудованием
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            точные размеры обработанных площадей (например, 
+                            точно зная какое оборудование было подцеплено к трактору
+                            и габариты оборудования, можно автоматически определять 
+                            обработанную им площадь)
+                        </li>
+                        <li class="advice-blog__item-list"><span></span>
+                            считывание произведенного действия
+                        </li>
+                    </ul> 
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="oborod" id="taxograf">
+        <div class="container">
+            <div class="oborod-blog">
+                <div class="oborod-blog__content">
+                    <div class="title">ТАХОГРАФЫ</div>
+                    <div class="oborod-blog__text">
+                        Контрольное устройство, устанавливаемое на борту автотранспортных средств. Предназначено для контроля пробега, скорости, времени в пути, соблюдения режима труда 
+                        и отдыха водителей.  
+                    </div>
+                    <div class="oborod-blog__text">
+                        Фиксирует данные рабочего дня водителей, шифрует их 
+                        и хранит в защищённом от редактирования виде. Устанавливаем тахографы СКЗИ и тахографы ЕСТР под ключ 
+                        с 2013 года 
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+                <div class="oborod-blog__media">
+                    <img src="./images/datchik-img_15.png" alt="datchik-img" class="oborod-blog__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="display" class="oborod oborod-white oborod-seriy">
+        <div class="container">
+            <div class="oborod-blog oborod-uchet">
+                <div class="oborod-blog__media">
+                    <div class="oborod-blog__block"></div>
+                </div>
+                <div class="oborod-blog__content">
+                    <div class="title">ДИСПЛЕЙ СВЯЗИ 
+                         <span class="title-inner"> С ВОДИТЕЛЕМ</span></div>
+                    <div class="oborod-blog__text">
+                        Предназначен для отображения ключевых параметров работы транспорта. Устройство оповещает водителя и диспетчера 
+                        о состоянии рабочих узлов, информирует о нарушении правил вождения.   
+                    </div>
+                    <div class="oborod-blog__text">
+                        Имеет функции назначения задач и управления статусами 
+                        их выполнения                        
+                    </div>
+                    <a href="#" class="oborod-blog__btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="consult" class="consult">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="consult-picture">
+                        <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="consult-assist">
+                      <div class="consult-assist__title">
+                          Консультация от эксперта
+                      </div>
+                      <div class="consult-assist__subtitle">
+                          Просто и понятно расскажем все нюансы
+                      </div>
+                  
+                    <form action="" class="consult-form">
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <input type="text" name="name" class="consult-form__name consult-form__input" placeholder="Имя*">
+                            </div>
+                        </div>
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <input type="text" name="phone" class="consult-form__phone consult-form__input" placeholder="Мобильный телефон*">
+                            </div>
+                        </div>
+                        <div class="consult-form__wrapper">
+                            <div>
+                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий*"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="consult-form__wrapper consult-form__wrapper2">
+                            <div>
+                                <input type="checkbox" name="check" class="consult-form__check">
+                            </div>
+                            <div class="consult-form__text">Даю согласие на обработку <a class="consult-form__link" href="#">персональных данных</a></div>
+                        </div>
+                        <button class="consult-form__btn" type="submit">Позвоните мне</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="footer-blog">
+                        <a href="solutions.html" class="footer-blog__title">Решения</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="fuel.html" class="footer-blog__link">Контроль топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="outsource.html" class="footer-blog__link">Аутсорсинг мониторинга</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="direction.html" class="footer-blog__link">Экономичное вождение</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль выполнения работ</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Видеомониторинг на транспорте</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">АнтиДТП</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="taxografiya.html" class="footer-blog__link">Тахография</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Электронная пломбировка</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">1С модули управления парком</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">IQ FREEZE</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Скоринг</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Телемедосмотр</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Консалтинг</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Лизинговая/страховая телематика</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-blog">
+                        <a href="industries.html" class="footer-blog__title">Для кого</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Грузовой транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="commercial.html" class="footer-blog__link">Легкий коммерческий транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Перевозки топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Сельское хозяйство</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Спецтехника</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Пассажирский транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Рефрижераторный транспорт</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Скорые службы</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Стационарные объекты</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">ESG</a>
+                              </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="footer-blog">
+                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Бортовой контроллер</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Датчик уровня топлива</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль нагрузки на ось</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль сохранности груза</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль давления в шинах</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Контроль работы механизмов</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Считывание can</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="" class="footer-blog__link">Прочее</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-blog footer-blog2">
+                        <ul class="footer-blog__menu">
+                              <li class="footer-blog__list">
+                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                              </li>
+                              <li class="footer-blog__list">
+                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                              </li>
+                        </ul>
+                        <div class="footer-blog__contact">
+                            <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                            <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+                            <div class="footer-blog__social">
+                                  <a href="#" class="footer-blog__social-link">
+                                    <img src="./icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                                  </a>
+                                  <a href="#" class="footer-blog__social-link">
+                                    <img src="./icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="footer-copy__content">
+                  <div class="footer-copy__text">Карта сайта</div>
+                  <div class="footer-copy__text">© 2021 Компания PROFFIT</div>
+                  <div class="footer-copy__text">О защите персональных данных</div>
+                </div>
+              <a href="/" class="footer-copy__logo"><img src="./images/logo.png" alt="logo" class="footer-copy__img"></a>              
+            </div>
+        </div>
+    </footer>
+    
+  </body>
+  </html>
