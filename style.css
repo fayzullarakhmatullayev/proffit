@@ -511,6 +511,10 @@ body {
   margin-bottom: 63px;
 }
 
+.solution-hidden {
+  display: none;
+}
+
 .solution-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,21 +522,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.solution-card-one {
-  padding-right: 4px;
-}
-
-.solution-card-two,
-.solution-card-four {
-  display: none;
-}
-
-.solution-card-three {
-  padding-left: 4px;
 }
 
 .solution-card__wrapper {
@@ -6170,9 +6159,15 @@ body {
   }
 
   .solution-card {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .solution-blog__title {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .result-slider__wrapper {
@@ -6346,14 +6341,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .solution-card-one {
-    padding-right: 0;
-  }
-
-  .solution-card-three {
-    padding-left: 0;
-  }
-
   .result {
     padding: 50px 0;
   }
@@ -6399,6 +6386,12 @@ body {
 
   .tasks-slider {
     display: none;
+  }
+
+  .partners-blog {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .consult {
@@ -6501,6 +6494,7 @@ body {
 
   .footer-copy__content {
     display: block;
+    width: 100%;
   }
 
   .footer-copy__text:first-child {
@@ -6585,6 +6579,10 @@ body {
     margin-bottom: 40px;
   }
 
+  .solution-card {
+    max-width: 320px;
+  }
+
   .solution-card__wrapper {
     max-width: 145px;
     width: 100%;
@@ -6614,7 +6612,7 @@ body {
   }
 
   .solution-card__title {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 16px;
   }
 
@@ -6821,8 +6819,21 @@ body {
     width: 100%;
   }
 
+  .partners .container {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .partners .title {
+    padding-left: 10px;
+  }
+
   .partners .title .title-inner {
     display: block;
+  }
+
+  .partners-blog {
+    max-width: 330px;
   }
 
   .partners-blog__items {
@@ -6876,7 +6887,7 @@ body {
     line-height: 22px;
     left: 19px;
     bottom: 16px;
-    max-width: 280px;
+    max-width: 87%;
     padding: 10px 5px 12px 8px;
   }
 
