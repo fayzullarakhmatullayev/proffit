@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffit</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./images/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/progressbar.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./images/css/slick.css">
+    <link rel="stylesheet" href="./images/css/progressbar.css">
+    <link rel="stylesheet" href="./images/css/style.min.css">
     
-    <script src="./jquery/jquery-3.5.1.min.js"></script>   
-    <script src="./js/jquery.waypoints.js"></script>
-    <script src="./js/progressbar.js"></script>
-    <script src="./js/inputmask.min.js"></script>
-    <script src="./js/jquery.counterup.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="./js/progress-index.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./images/jquery/jquery-3.5.1.min.js"></script>   
+    <script src="./images/js/jquery.waypoints.js"></script>
+    <script src="./images/js/progressbar.js"></script>
+    <script src="./images/js/inputmask.min.js"></script>
+    <script src="./images/js/jquery.counterup.min.js"></script>
+    <script src="./images/js/progress-index.js"></script>
+    <script src="./images/js/slick.min.js"></script>
+    <script src="./images/js/script.js"></script>
     
 </head>
 <body>
+    
     
     <header class="header">
         <div class="container">
@@ -30,8 +31,11 @@
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -81,9 +85,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -117,9 +124,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -163,6 +173,14 @@
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
                 </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -173,10 +191,12 @@
                 <div class="intro-content">
                     <h1 class="intro-content__title">Контроль работы автопарка</h1>
                     <div class="intro-content__text">
-                        С нами Вы - эксперт в управлении : <br>
-                        - процессами <br>
-                        - расходами <br>
-                        - людьми <br>
+                        С нами Вы - эксперт в управлении : 
+                        <div class="intro-content__text-inner">
+                            - процессами <br>
+                            - расходами <br>
+                            - людьми
+                        </div>
                         Знаете, что, как, где смотреть и главное - что с этим делать 
                     </div>
                     <a href="#consult" class="intro-content__btn">Консультация</a>
@@ -184,10 +204,12 @@
                 <div class="intro-content">
                     <h1 class="intro-content__title">Контроль работы автопарка</h1>
                     <div class="intro-content__text">
-                        С нами Вы - эксперт в управлении : <br>
-                        - процессами <br>
-                        - расходами <br>
-                        - людьми <br>
+                        С нами Вы - эксперт в управлении : 
+                        <div class="intro-content__text-inner">
+                            - процессами <br>
+                            - расходами <br>
+                            - людьми
+                        </div>
                         Знаете, что, как, где смотреть и главное - что с этим делать 
                     </div>
                     <a href="#consult" class="intro-content__btn">Консультация</a>
@@ -218,7 +240,7 @@
                         <div class="solution-card solution-card-one">
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="icons/solution-icon1.png" alt="solution-icon1" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon1.png" alt="solution-icon1" class="solution-card__img">
                                     <div class="solution-card__title">АНТИ ДТП</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -235,7 +257,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="icons/solution-icon2.png" alt="solution-icon2" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon2.png" alt="solution-icon2" class="solution-card__img">
                                     <div class="solution-card__title">Экономичное вождение</div> 
                                 </div>    
                                 <div class="solution-card__item solution-card__item-back">
@@ -252,7 +274,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="icons/solution-icon3.png" alt="solution-icon3" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon3.png" alt="solution-icon3" class="solution-card__img">
                                     <div class="solution-card__title">Контроль выполнения работ</div>
                                 </div>    
                                 <div class="solution-card__item solution-card__item-back">
@@ -268,7 +290,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="icons/solution-icon4.png" alt="solution-icon4" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon4.png" alt="solution-icon4" class="solution-card__img">
                                     <div class="solution-card__title">Контроль сохранности груза</div>
                                 </div>    
                                 <div class="solution-card__item solution-card__item-back">
@@ -286,7 +308,7 @@
                         <div class="solution-card solution-card-two">
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="icons/solution-icon11.png" alt="solution-icon11" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon11.png" alt="solution-icon11" class="solution-card__img">
                                     <div class="solution-card__title">Электронная пломбировка</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -301,7 +323,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon12.png" alt="solution-icon12" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon12.png" alt="solution-icon12" class="solution-card__img">
                                     <div class="solution-card__title">Теле медосмотр</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -317,7 +339,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon13.png" alt="solution-icon13" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon13.png" alt="solution-icon13" class="solution-card__img">
                                     <div class="solution-card__title">1с модули управления парком</div>     
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -333,7 +355,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon14.png" alt="solution-icon14" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon14.png" alt="solution-icon14" class="solution-card__img">
                                     <div class="solution-card__title">консалтинг</div>
                                 </div> 
                                 <div class="solution-card__item solution-card__item-back">
@@ -346,15 +368,13 @@
                                     <a href="#" class="solution-card__btn">Подробнее</a>
                                 </div>   
                             </div>
-                            
-                            
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="solution-card solution-card-three">
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon5.png" alt="solution-icon5" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon5.png" alt="solution-icon5" class="solution-card__img">
                                     <div class="solution-card__title">Мониторинг транспорта</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -369,7 +389,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon6.png" alt="solution-icon6" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon6.png" alt="solution-icon6" class="solution-card__img">
                                     <div class="solution-card__title">Контроль топлива</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -386,7 +406,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon7.png" alt="solution-icon7" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon7.png" alt="solution-icon7" class="solution-card__img">
                                     <div class="solution-card__title">Видеомониторинг на транспорте</div>  
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -401,7 +421,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon8.png" alt="solution-icon8" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon8.png" alt="solution-icon8" class="solution-card__img">
                                     <div class="solution-card__title">Аутсорсинг мониторинга</div>    
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -418,7 +438,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon9.png" alt="solution-icon9" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon9.png" alt="solution-icon9" class="solution-card__img">
                                     <div class="solution-card__title">Тахография</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -434,7 +454,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon10.png" alt="solution-icon10" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon10.png" alt="solution-icon10" class="solution-card__img">
                                     <div class="solution-card__title">IQ Freeze</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -451,7 +471,7 @@
                         <div class="solution-card solution-card-four">
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon15.png" alt="solution-icon15" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon15.png" alt="solution-icon15" class="solution-card__img">
                                     <div class="solution-card__title">лизинговая/страховая телематика</div>
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -468,7 +488,7 @@
                             
                             <div class="solution-card__wrapper">
                                 <div class="solution-card__item solution-card__item-front">
-                                    <img src="./icons/solution-icon16.png" alt="solution-icon16" class="solution-card__img">
+                                    <img src="./images/icons/solution-icon16.png" alt="solution-icon16" class="solution-card__img">
                                     <div class="solution-card__title">Скоринг</div>  
                                 </div>
                                 <div class="solution-card__item solution-card__item-back">
@@ -486,7 +506,7 @@
                     </div>
                 </div>
                 <div class="solution-blog__wrapper">
-                    <a href="#" class="solution-blog__btn">Больше решений <img src="./icons/cheked-icon.png" alt="cheked-icon" class="solution-blog__icon"></a>
+                    <a href="#" class="solution-blog__btn">Больше решений <img src="./images/icons/cheked-icon.png" alt="cheked-icon" class="solution-blog__icon"></a>
                 </div>
             </div>
         </div>
@@ -495,11 +515,23 @@
     <section class="result">
         <div class="container">
             <div class="title">бЫСТРЫЙ И <span class="title-inner">УСТОЙЧИВЫЙ РЕЗУЛЬТАТ</span></div>
+            <div class="subtitle">
+                Повышение производительности,
+                сокращение затрат, исключение 
+                мошенничества на транспорте
+            </div>
             <div class="result-slider">
                 <div>
                     <div class="result-slider__wrapper">
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТОПЛИВО</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТОПЛИВО</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ГСМ
+                                </div>
+                            </div>
+                            
                             <div class="result-slider__circle js-result-slider__circle-one">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">32</span><span class="percent">%</span></div>
@@ -511,7 +543,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТЕХНИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТЕХНИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ТО и ремонты
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-two">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">26</span><span class="percent">%</span></div>
@@ -523,7 +561,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ПЕРСОНАЛ</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ПЕРСОНАЛ</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    повышение 
+                                    производительности
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-three">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">30</span><span class="percent">%</span></div>
@@ -535,7 +579,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение
+                                    простоев
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-four">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">35</span><span class="percent">%</span></div>
@@ -547,7 +597,14 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    соответствие
+                                    требованиям 
+                                    закона
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-five">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">100</span><span class="percent">%</span></div>
@@ -565,7 +622,14 @@
                 <div>
                     <div class="result-slider__wrapper">
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТОПЛИВО</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТОПЛИВО</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ГСМ
+                                </div>
+                            </div>
+                            
                             <div class="result-slider__circle js-result-slider__circle-one">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">32</span><span class="percent">%</span></div>
@@ -577,7 +641,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТЕХНИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТЕХНИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ТО и ремонты
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-two">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">26</span><span class="percent">%</span></div>
@@ -589,7 +659,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ПЕРСОНАЛ</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ПЕРСОНАЛ</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    повышение 
+                                    производительности
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-three">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">30</span><span class="percent">%</span></div>
@@ -601,19 +677,32 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение
+                                    простоев
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-four">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">35</span><span class="percent">%</span></div>
                                     <div class="result-slider__text">
-                                        снижение <br>
+                                        снижение
                                         простоев
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    соответствие
+                                    требованиям 
+                                    закона
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-five">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">100</span><span class="percent">%</span></div>
@@ -631,7 +720,14 @@
                 <div>
                     <div class="result-slider__wrapper">
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТОПЛИВО</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТОПЛИВО</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ГСМ
+                                </div>
+                            </div>
+                            
                             <div class="result-slider__circle js-result-slider__circle-one">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">32</span><span class="percent">%</span></div>
@@ -643,7 +739,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ТЕХНИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ТЕХНИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение издержек 
+                                    на ТО и ремонты
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-two">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">26</span><span class="percent">%</span></div>
@@ -655,7 +757,13 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ПЕРСОНАЛ</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ПЕРСОНАЛ</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    повышение 
+                                    производительности
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-three">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">30</span><span class="percent">%</span></div>
@@ -667,19 +775,32 @@
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    снижение
+                                    простоев
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-four">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">35</span><span class="percent">%</span></div>
                                     <div class="result-slider__text">
-                                        снижение <br>
+                                        снижение
                                         простоев
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="result-slider__items">
-                            <div class="result-slider__title">ЛОГИСТИКА</div>
+                            <div class="result-slider__content">
+                                <div class="result-slider__title">ЛОГИСТИКА</div>
+                                <div class="result-slider__text result-slider__text2">
+                                    соответствие
+                                    требованиям 
+                                    закона
+                                </div>
+                            </div>
                             <div class="result-slider__circle js-result-slider__circle-five">
                                 <div class="result-slider__circle-inner">
                                     <div class="result-slider__number"><span class="js-number">100</span><span class="percent">%</span></div>
@@ -694,26 +815,27 @@
                     </div>
                     <div class="result-slider__subtext">Рекордные показатели наших клиентов</div>
                 </div>
+                
             </div>
         </div>
     </section>
     
     <section class="evolution">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
+            <div class="evolution-wrapper">
+ 
                     <div class="evolution-picture">
-                        <img src="./images/evolution-img.png" alt="evolution-img" class="evolution-picture__blog">
+                        <img src="./images/evolution-img.png" alt="evolution-img" class="evolution-picture__img">
                     </div>
-                </div>
-                <div class="col-xl-6">
+
+
                     <div class="evolution-content">
                     <div class="title">На каждом <span class="title-inner">этапе развития</span></div>
-                    <div class="evolution-content__text">
+                    <div class="subtitle">
                         Решения для автопарков любого размера —
                         от 1 до 8000 единиц транспорта
                     </div>
-                </div>
+
                 </div>
             </div>
                 
@@ -725,74 +847,113 @@
     <section class="services">
         <div class="container">
             <div class="title">именно <span class="title-inner">мы</span></div>
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="services-wrapper services-wrapper-1">
-                        <div class="services-wrapper__inner services-wrapper__inner1">
-                            <div class="services-blog">
-                                <div class="services-blog__title">Сбережем Ваши ресурсы</div>   
-                                <div class="services-blog__text">
-                                    Оценим возможность использования ранее
-                                    установленного Вами оборудования    
+            <div class="services-inner">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="services-wrapper services-wrapper-1">
+                            <div class="services-wrapper__inner services-wrapper__inner1">
+                                <div class="services-blog">
+                                    <div class="services-blog__title">Сбережем Ваши ресурсы</div>   
+                                    <div class="services-blog__text">
+                                        Оценим возможность использования ранее
+                                        установленного Вами оборудования    
+                                    </div>
+                                </div>
+                                <div class="services-picture">
+                                    <img src="./images/icons/services-icon1.png" alt="services-icon1" class="services-picture__icon">
                                 </div>
                             </div>
-                            <div class="services-picture">
-                                <img src="./icons/services-icon1.png" alt="services-icon1" class="services-picture__icon">
-                            </div>
-                        </div>
-                        <div class="services-wrapper__inner services-wrapper__inner1">
-                            <div class="services-blog">
-                                <div class="services-blog__title">Поделимся знаниями</div>   
-                                <div class="services-blog__text">
-                                    Повышайте Вашу экспертность
-                                    и профессионализм   
+                            <div class="services-wrapper__inner services-wrapper__inner1">
+                                <div class="services-blog">
+                                    <div class="services-blog__title">Поделимся знаниями</div>   
+                                    <div class="services-blog__text">
+                                        Повышайте Вашу экспертность
+                                        и профессионализм   
+                                    </div>
+                                </div>
+                                <div class="services-picture">
+                                    <img src="./images/icons/services-icon2.png" alt="services-icon2" class="services-picture__icon">
                                 </div>
                             </div>
-                            <div class="services-picture">
-                                <img src="./icons/services-icon2.png" alt="services-icon2" class="services-picture__icon">
+                            <img src="./images/icons/services-icon-line.png" alt="services-icon-line" class="services-line">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-wrapper services-wrapper-2">
+                            <div class="services-wrapper__inner services-wrapper__inner2">
+                                <div class="services-picture">
+                                    <img src="./images/icons/services-icon3.png" alt="services-icon3" class="services-picture__icon">
+                                </div>
+                                <div class="services-blog">
+                                    <div class="services-blog__title">Расскажем как надо</div>   
+                                    <div class="services-blog__text">
+                                        Экспертно предложим готовые решения,
+                                        исправим прошлые ошибки    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-wrapper__inner services-wrapper__inner2">
+                                <div class="services-picture">
+                                    <img src="./images/icons/services-icon4.png" alt="services-icon4" class="services-picture__icon">
+                                </div>
+                                <div class="services-blog">
+                                    <div class="services-blog__title">Сэкономим ваши силы и время</div>   
+                                    <div class="services-blog__text">
+                                        Проще некуда - всё у одного интегратора, 
+                                        не надо «метаться»    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-wrapper__inner services-wrapper__inner2">
+                                <div class="services-picture">
+                                    <img src="./images/icons/services-icon1.png" alt="services-icon1" class="services-picture__icon">
+                                </div>
+                                <div class="services-blog">
+                                    <div class="services-blog__title">Убережем от ошибки</div>   
+                                    <div class="services-blog__text">
+                                        Ваш осознанный (а не навязанный) выбор 
+                                        из лучших марок ПО и оборудования    
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <img src="./icons/services-icon-line.png" alt="services-icon-line" class="services-line">
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="services-wrapper services-wrapper-2">
-                        <div class="services-wrapper__inner services-wrapper__inner2">
-                            <div class="services-picture">
-                                <img src="./icons/services-icon3.png" alt="services-icon3" class="services-picture__icon">
-                            </div>
-                            <div class="services-blog">
-                                <div class="services-blog__title">Расскажем как надо</div>   
-                                <div class="services-blog__text">
-                                    Экспертно предложим готовые решения,
-                                    исправим прошлые ошибки    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="services-wrapper__inner services-wrapper__inner2">
-                            <div class="services-picture">
-                                <img src="./icons/services-icon4.png" alt="services-icon4" class="services-picture__icon">
-                            </div>
-                            <div class="services-blog">
-                                <div class="services-blog__title">Сэкономим ваши силы и время</div>   
-                                <div class="services-blog__text">
-                                    Проще некуда - всё у одного интегратора, 
-                                    не надо «метаться»    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="services-wrapper__inner services-wrapper__inner2">
-                            <div class="services-picture">
-                                <img src="./icons/services-icon1.png" alt="services-icon1" class="services-picture__icon">
-                            </div>
-                            <div class="services-blog">
-                                <div class="services-blog__title">Убережем от ошибки</div>   
-                                <div class="services-blog__text">
-                                    Ваш осознанный (а не навязанный) выбор 
-                                    из лучших марок ПО и оборудования    
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="services-slider">
+                <div class="services-slider__items">
+                    <div class="services-slider__items-title">Расскажем как надо</div>
+                    <div class="services-slider__items-text">
+                        Экспертно предложим готовые решения,
+                        исправим прошлые ошибки
+                    </div>
+                </div>
+                <div class="services-slider__items">
+                    <div class="services-slider__items-title">Сбережем Ваши ресурсы</div>
+                    <div class="services-slider__items-text">
+                        Оценим возможность использования ранее
+                        установленного Вами оборудования
+                    </div>
+                </div>
+                <div class="services-slider__items">
+                    <div class="services-slider__items-title">Сэкономим ваши силы и время</div>
+                    <div class="services-slider__items-text">
+                        Проще некуда - всё у одного интегратора, 
+                        не надо «метаться»
+                    </div>
+                </div>
+                <div class="services-slider__items">
+                    <div class="services-slider__items-title">Поделимся знаниями</div>
+                    <div class="services-slider__items-text">
+                        Повышайте Вашу экспертность
+                        и профессионализм
+                    </div>
+                </div>
+                <div class="services-slider__items">
+                    <div class="services-slider__items-title">Убережем от ошибки </div>
+                    <div class="services-slider__items-text">
+                        Ваш осознанный (а не навязанный) выбор 
+                        из лучших марок ПО и оборудования
                     </div>
                 </div>
             </div>
@@ -805,7 +966,7 @@
                 <div class="col-xl-6">
                     <div class="marker-content">
                         <div class="title">Признанные <span class="title-inner">эксперты рынка</span></div>
-                        <div class="market-content__text">
+                        <div class="subtitle">
                             PROFFIT - ведущий интегратор оборудования, 
                             ПО, решений и технологий  для контроля 
                             автопарков с 2006 года
@@ -838,7 +999,18 @@
                 <div class="col-xl-6">
                     <div class="tasks-content">
                         <div class="title">Отраслевые<span class="title-inner"> задачи</span></div>
-                        <div class="tasks-content__text">От уникальных решений до отраслевых стандартов</div>
+                        <div class="subtitle">От уникальных решений до отраслевых стандартов</div>
+                        <div class="tasks-content__list">
+                            <a href="#" class="tasks-slider__items">Грузовой транспорт</a>
+                            <a href="#" class="tasks-slider__items">Спец техника</a>
+                            <a href="#" class="tasks-slider__items">Пассажирский транспорт</a>
+                            <a href="#" class="tasks-slider__items">Рефрижераторы</a>
+                            <a href="#" class="tasks-slider__items">Сельхоз транспорт</a>
+                            <a href="#" class="tasks-slider__items">Перевозки топлива</a>
+                            <a href="#" class="tasks-slider__items">Легкий коммерческий транспорт</a>
+                            <a href="#" class="tasks-slider__items">Скорые службы</a>
+                            <a href="#" class="tasks-slider__items">Стационарные объекты</a>
+                        </div>
                         <a href="#" class="tasks-content__btn">Все отрасли</a>
                     </div>
                 </div>
@@ -896,19 +1068,19 @@
                 <div class="partners-blog__items">
                     <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
                 </div>
             </div>
@@ -968,10 +1140,10 @@
                         <a href="#" class="article-content__btn">Все новости</a>
                         <div class="article-content__social">
                             <a href="#" class="article-content__link">
-                                <img class="article-content__img" src="./icons/articles-icon1.png" alt="articles-icon1">
+                                <img class="article-content__img" src="./images/icons/articles-icon1.png" alt="articles-icon1">
                             </a>
                             <a href="#" class="article-content__link">
-                                <img class="article-content__img" src="./icons/articles-icon2.png" alt="articles-icon1">
+                                <img class="article-content__img" src="./images/icons/articles-icon2.png" alt="articles-icon1">
                             </a>
                         </div>
                     </div>
@@ -983,12 +1155,12 @@
   <section id="consult" class="consult">
       <div class="container">
           <div class="row">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6">
                   <div class="consult-picture">
                       <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
                   </div>
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6">
                 <div class="consult-assist">
                     <div class="consult-assist__title">
                         Консультация от эксперта
@@ -1026,15 +1198,29 @@
               </div>
           </div>
       </div>
-  </section>  
+  </section>
   
   <footer class="footer">
       <div class="container">
+        <div class="footer-blog__contact footer-blog__contact2">
+            <div class="footer-blog__contact2-wrapper">
+                <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+            </div>
+            <div class="footer-blog__social">
+                  <a href="#" class="footer-blog__social-link">
+                    <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                  </a>
+                  <a href="#" class="footer-blog__social-link">
+                    <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                  </a>
+            </div>
+        </div>
           <div class="row">
-              <div class="col-xl-4">
+              <div class="col-xl-4 col-md-4 col-sm-12">
                   <div class="footer-blog">
-                      <a href="solutions.html" class="footer-blog__title">Решения</a>
-                      <ul class="footer-blog__menu">
+                      <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                      <ul class="footer-blog__menu footer-blog__menu1">
                             <li class="footer-blog__list">
                               <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                             </li>
@@ -1086,10 +1272,10 @@
                       </ul>
                   </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-md-3 col-sm-12">
                   <div class="footer-blog">
-                      <a href="industries.html" class="footer-blog__title">Для кого</a>
-                      <ul class="footer-blog__menu">
+                      <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                      <ul class="footer-blog__menu footer-blog__menu2">
                             <li class="footer-blog__list">
                               <a href="" class="footer-blog__link">Грузовой транспорт</a>
                             </li>
@@ -1123,10 +1309,10 @@
                       </ul>
                   </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-md-3 col-sm-12">
                   <div class="footer-blog">
-                      <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                      <ul class="footer-blog__menu">
+                      <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                      <ul class="footer-blog__menu footer-blog__menu3">
                             <li class="footer-blog__list">
                               <a href="" class="footer-blog__link">Бортовой контроллер</a>
                             </li>
@@ -1154,17 +1340,17 @@
                       </ul>
                   </div>
               </div>
-              <div class="col-xl-2">
+              <div class="col-xl-2 col-md-2 col-sm-12">
                   <div class="footer-blog footer-blog2">
-                      <ul class="footer-blog__menu">
+                      <ul class="footer-blog__menu1">
                             <li class="footer-blog__list">
-                              <a href="blog.html" class="footer-blog__link2">Блог</a>
+                              <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                             </li>
                             <li class="footer-blog__list">
-                              <a href="about.html" class="footer-blog__link2">О компании</a>
+                              <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                             </li>
                             <li class="footer-blog__list">
-                              <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                              <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                             </li>
                       </ul>
                       <div class="footer-blog__contact">
@@ -1172,10 +1358,10 @@
                           <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
                           <div class="footer-blog__social">
                                 <a href="#" class="footer-blog__social-link">
-                                  <img src="./icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                                  <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
                                 </a>
                                 <a href="#" class="footer-blog__social-link">
-                                  <img src="./icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                                  <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
                                 </a>
                           </div>
                       </div>
