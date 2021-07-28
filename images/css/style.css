@@ -294,7 +294,7 @@ body {
 
 .nav-mobile__burger span {
   width: 90%;
-  height: 2px;
+  height: 1px;
   background: #0059ff;
   display: block;
 }
@@ -6346,6 +6346,14 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .solution-card-one {
+    padding-right: 0;
+  }
+
+  .solution-card-three {
+    padding-left: 0;
+  }
+
   .result {
     padding: 50px 0;
   }
@@ -6575,10 +6583,6 @@ body {
 
   .solution .subtitle {
     margin-bottom: 40px;
-  }
-
-  .solution-card-three {
-    padding: 0;
   }
 
   .solution-card__wrapper {
