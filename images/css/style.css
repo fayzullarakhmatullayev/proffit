@@ -6577,6 +6577,10 @@ body {
     margin-bottom: 40px;
   }
 
+  .solution-card-three {
+    padding: 0;
+  }
+
   .solution-card__wrapper {
     max-width: 145px;
     width: 100%;
