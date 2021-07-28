@@ -6347,11 +6347,11 @@ body {
 
 @media (max-width: 767.98px) {
   .solution-card-one {
-    padding-right: 0;
+    padding-right: 0 !important;
   }
 
   .solution-card-three {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 
   .result {
