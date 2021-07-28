@@ -6501,6 +6501,7 @@ body {
 
   .footer-copy__content {
     display: block;
+    width: 100%;
   }
 
   .footer-copy__text:first-child {
