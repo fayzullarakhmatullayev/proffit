@@ -54,5 +54,4 @@ $(document).ready(function () {
     });
     
     $(document).on('click', '.result .slick-button, .result .slick-dots button', startCircleProgress);
-    $(document).on('mouseup touchstart', '.result-slider__wrapper', startCircleProgress);
 });
