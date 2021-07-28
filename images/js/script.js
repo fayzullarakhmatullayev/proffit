@@ -82,8 +82,7 @@ $(document).ready(function () {
       });
       $(document).on('click', '.solution-blog__btn', function (e) {
         e.preventDefault();
-        $('.solution-card-two, .solution-card-four').slideDown(150);
-        $('.solution-card-two, .solution-card-four').css('display', 'flex');
+        $('.solution-hidden').slideDown(300);
       }); 
       $(document).on('click', '#js-btn-1',function(e){
         e.preventDefault();
@@ -127,6 +126,21 @@ $(document).ready(function () {
         return n.replace(/,/g, ' ')
       }
     })
+    $('#number1').counterUp({
+      time: 1000,
+    })
+    $('#number2').counterUp({
+      time: 1000,
+    })
+    $('#number3').counterUp({
+      time: 1000,
+    })
+    $('#number4').counterUp({
+      time: 1000,
+    })
+    $('#number5').counterUp({
+      time: 1000,
+    })
     $(document).on('click', '.digital-table__btn', function(e){
       e.preventDefault();
       $('.digital-table__wrapper').slideToggle(300)
@@ -153,7 +167,6 @@ $(document).ready(function () {
     var dataFilter = $(this).attr('data-filter');
     filter('.' + dataFilter);
   });
-  
   
   $(document).on('click', '.direction-info__title', function(){
     if(!$(this).hasClass('tab-active')){
@@ -192,4 +205,5 @@ $(document).ready(function () {
     e.preventDefault();
     $('.footer-blog__menu3').slideToggle(300);
   })
+  
 });
