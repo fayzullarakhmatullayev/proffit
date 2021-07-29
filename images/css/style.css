@@ -7347,6 +7347,12 @@ body {
     align-items: flex-start;
   }
 
+  .blog-article__news-text {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
   .blog-article__news-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
