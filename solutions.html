@@ -29,8 +29,11 @@
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -80,9 +83,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -116,9 +122,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -161,6 +170,14 @@
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -214,279 +231,272 @@
                 <li class="solution-page__list"><a href="#" data-filter="stasionar" class="solution-page__link">Стационарные объекты</a></li>
                 <li class="solution-page__list"><a href="#" data-filter="esg" class="solution-page__link">ESG</a></li>
             </ul>
+            
             <div class="solution-blog">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="solution-card"> 
-                            
-                            
-                            <div class="solution-card__wrapper all gruz perevoz sel spes passaj trans skoriy stasionar">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon5.png" alt="solution-icon5" class="solution-card__img">
-                                    <div class="solution-card__title">Мониторинг транспорта</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Лучшие решения 
-                                        по мониторингу транспорта
-                                        и контролю топлива
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
+                <div class="solution-blog__wrapper2">
+                    <div class="solution-card__wrapper all gruz perevoz sel spes passaj trans skoriy stasionar">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon5.png" alt="solution-icon5" class="solution-card__img">
+                            <div class="solution-card__title">Мониторинг транспорта</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Лучшие решения 
+                                по мониторингу транспорта
+                                и контролю топлива
                             </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz sel spes trans stasionar">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon6.png" alt="solution-header6" class="solution-card__img">
-                                    <div class="solution-card__title">Контроль топлива</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Реальная картина 
-                                        по топливу, пресечение 
-                                        мошенничества,
-                                        эффективная отработка 
-                                        топливных инцидентов
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz passaj passaj trans">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon2.png" alt="solution-icon2" class="solution-card__img">
-                                    <div class="solution-card__title">Экономичное вождение</div> 
-                                </div>    
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Контроль нежелательной
-                                        манеры езды и привычек
-                                        водителя, значимо 
-                                        влияющих на расход
-                                        топлива
-                                    </div>
-                                    <a href="direction.html" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all sel spes passaj trans stasionar">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon3.png" alt="solution-icon3" class="solution-card__img">
-                                    <div class="solution-card__title">Контроль выполнения работ</div>
-                                </div>    
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Контроль работы навесного
-                                        оборудования. 
-                                        Контроль работы персонала 
-                                        (левые рейсы, геозоны и пр.)
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon9.png" alt="solution-icon9" class="solution-card__img">
-                                    <div class="solution-card__title">Тахография</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Все об обязательном 
-                                        и дистанционном контроле
-                                        режима труда и отдыха
-                                        водителей 
-                                    </div>
-                                    <a href="taxografiya.html" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz trans">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon13.png" alt="solution-icon13" class="solution-card__img">
-                                    <div class="solution-card__title">1с модули управления парком</div>     
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Управление заявками 
-                                        и перевозками 
-                                        для оптимизации 
-                                        работы автопарка
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>    
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz sel spes passaj trans">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon12.png" alt="solution-icon12" class="solution-card__img">
-                                    <div class="solution-card__title">Теле медосмотр</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Удаленный 
-                                        и автоматизированный
-                                        предрейсовый медосмотр
-                                        водителей
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>    
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz spes trans">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon14.png" alt="solution-icon14" class="solution-card__img">
-                                    <div class="solution-card__title">консалтинг</div>
-                                </div> 
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Консультирование 
-                                        по управлению и стратегии
-                                        развития автопарка 
-                                        от экспертов
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>   
-                            </div>
-                            
+                            <a href="#" class="solution-card__btn">Подробнее</a>
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="solution-card">
-                            
-                            <div class="solution-card__wrapper all gruz perevoz trans stasionar">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon8.png" alt="solution-icon8" class="solution-card__img">
-                                    <div class="solution-card__title">Аутсорсинг мониторинга</div>    
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Передача функций 
-                                        по выявлению инцидентов 
-                                        профессионалам, 
-                                        непредвзятая аналитика
-                                        и статистика                                        
-                                    </div>
-                                    <a href="outsource.html" class="solution-card__btn">Подробнее</a>
-                                </div>
+                    
+                    <div class="solution-card__wrapper all gruz perevoz sel spes trans stasionar">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon6.png" alt="solution-icon6" class="solution-card__img">
+                            <div class="solution-card__title">Контроль топлива</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Реальная картина 
+                                по топливу, пресечение 
+                                мошенничества,
+                                эффективная отработка 
+                                топливных инцидентов
                             </div>
-                            
-                            <div class="solution-card__wrapper all">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon11.png" alt="solution-icon11" class="solution-card__img">
-                                    <div class="solution-card__title">Электронная пломбировка</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Исключение 
-                                        неконтролируемого доступа 
-                                        к грузу и узлам
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>    
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz sel spes skoriy stasionar">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon7.png" alt="solution-icon7" class="solution-card__img">
-                                    <div class="solution-card__title">Видеомониторинг на транспорте</div>  
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Видеоконтроль инцидентов,
-                                        безопасности ТС, 
-                                        людей и груза
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>  
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz perevoz spes passaj trans skoriy">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon1.png" alt="solution-icon1" class="solution-card__img">
-                                    <div class="solution-card__title">АНТИ ДТП</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Контроль состояния 
-                                        водителя и система помощи 
-                                        для предотвращения ДТП 
-                                        на основе «машинного
-                                        зрения» (ADAS)
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all gruz trans">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon10.png" alt="solution-icon10" class="solution-card__img">
-                                    <div class="solution-card__title">IQ Freeze</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Контроль перевозки
-                                        температурных грузов 
-                                        и управление парком
-                                        рефрижераторов                                
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div> 
-                            
-                            <div class="solution-card__wrapper all spes passaj trans skoriy">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon16.png" alt="solution-icon16" class="solution-card__img">
-                                    <div class="solution-card__title">Скоринг</div>  
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Статистика эксплуатации,
-                                        оценка стиля вождения,
-                                        тренды, влияющие 
-                                        на безопасность и 
-                                        сохранность техники
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all skoriy">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon15.png" alt="solution-icon15" class="solution-card__img">
-                                    <div class="solution-card__title">лизинговая/страховая телематика</div>
-                                </div>
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Выявление рисков 
-                                        и опасных тенденций, 
-                                        «прозрачный» разбор ДТП, 
-                                        инструменты 
-                                        его предотвращения                       
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div>
-                            
-                            <div class="solution-card__wrapper all">
-                                <div class="solution-card__item solution-card__item-front">
-                                    <img src="./images/icons/solution-icon4.png" alt="solution-icon4" class="solution-card__img">
-                                    <div class="solution-card__title">Контроль сохранности груза</div>
-                                </div>    
-                                <div class="solution-card__item solution-card__item-back">
-                                    <div class="solution-card__text">
-                                        Контроль состояния 
-                                        водителя и система помощи 
-                                        для предотвращения ДТП 
-                                        на основе «машинного
-                                        зрения» (ADAS)
-                                    </div>
-                                    <a href="#" class="solution-card__btn">Подробнее</a>
-                                </div>
-                            </div> 
-                            
+                            <a href="#" class="solution-card__btn">Подробнее</a>
                         </div>
                     </div>
+                    
+                    <div class="solution-card__wrapper all gruz perevoz trans stasionar">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon8.png" alt="solution-icon8" class="solution-card__img">
+                            <div class="solution-card__title">Аутсорсинг мониторинга</div>    
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Передача функций 
+                                по выявлению инцидентов 
+                                профессионалам, 
+                                непредвзятая аналитика
+                                и статистика                                        
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon11.png" alt="solution-icon11" class="solution-card__img">
+                            <div class="solution-card__title">Электронная пломбировка</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Исключение 
+                                неконтролируемого доступа 
+                                к грузу и узлам
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>    
+                    </div>
+                    
+                    <div class="solution-card__wrapper all gruz perevoz passaj trans">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon2.png" alt="solution-icon2" class="solution-card__img">
+                            <div class="solution-card__title">Экономичное вождение</div> 
+                        </div>    
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Контроль нежелательной
+                                манеры езды и привычек
+                                водителя, значимо 
+                                влияющих на расход
+                                топлива
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all sel spes passaj trans stasionar">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon3.png" alt="solution-icon3" class="solution-card__img">
+                            <div class="solution-card__title">Контроль выполнения работ</div>
+                        </div>    
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Контроль работы навесного
+                                оборудования. 
+                                Контроль работы персонала 
+                                (левые рейсы, геозоны и пр.)
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all gruz perevoz sel spes skoriy stasionar">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon7.png" alt="solution-icon7" class="solution-card__img">
+                            <div class="solution-card__title">Видеомониторинг на транспорте</div>  
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Видеоконтроль инцидентов,
+                                безопасности ТС, 
+                                людей и груза
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>  
+                    </div>
+                    
+                    <div class="solution-card__wrapper all">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon1.png" alt="solution-icon1" class="solution-card__img">
+                            <div class="solution-card__title">АНТИ ДТП</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Контроль состояния 
+                                водителя и система помощи 
+                                для предотвращения ДТП 
+                                на основе «машинного
+                                зрения» (ADAS)
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon9.png" alt="solution-icon9" class="solution-card__img">
+                            <div class="solution-card__title">Тахография</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Все об обязательном 
+                                и дистанционном контроле
+                                режима труда и отдыха
+                                водителей 
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="solution-card__wrapper all gruz perevoz trans">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon13.png" alt="solution-icon13" class="solution-card__img">
+                            <div class="solution-card__title">1с модули управления парком</div>     
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Управление заявками 
+                                и перевозками 
+                                для оптимизации 
+                                работы автопарка
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>    
+                    </div>
+                    
+                    <div class="solution-card__wrapper all gruz trans solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon10.png" alt="solution-icon10" class="solution-card__img">
+                            <div class="solution-card__title">IQ Freeze</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Контроль перевозки
+                                температурных грузов 
+                                и управление парком
+                                рефрижераторов                                
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div> 
+                    
+                    <div class="solution-card__wrapper all spes passaj trans skoriy solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon16.png" alt="solution-icon16" class="solution-card__img">
+                            <div class="solution-card__title">Скоринг</div>  
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Статистика эксплуатации,
+                                оценка стиля вождения,
+                                тренды, влияющие 
+                                на безопасность и 
+                                сохранность техники
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all gruz perevoz sel spes passaj trans solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon12.png" alt="solution-icon12" class="solution-card__img">
+                            <div class="solution-card__title">Теле медосмотр</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Удаленный 
+                                и автоматизированный
+                                предрейсовый медосмотр
+                                водителей
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>    
+                    </div>
+                    
+                    <div class="solution-card__wrapper all gruz spes trans solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon14.png" alt="solution-icon14" class="solution-card__img">
+                            <div class="solution-card__title">консалтинг</div>
+                        </div> 
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Консультирование 
+                                по управлению и стратегии
+                                развития автопарка 
+                                от экспертов
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>   
+                    </div>
+                    
+                    <div class="solution-card__wrapper all skoriy solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon15.png" alt="solution-icon15" class="solution-card__img solution-card__img2">
+                            <div class="solution-card__title">лизинговая/страховая телематика</div>
+                        </div>
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Выявление рисков 
+                                и опасных тенденций, 
+                                «прозрачный» разбор ДТП, 
+                                инструменты 
+                                его предотвращения                       
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card__wrapper all solution-hidden">
+                        <div class="solution-card__item solution-card__item-front">
+                            <img src="./images/icons/solution-icon4.png" alt="solution-icon4" class="solution-card__img">
+                            <div class="solution-card__title">Контроль сохранности груза</div>
+                        </div>    
+                        <div class="solution-card__item solution-card__item-back">
+                            <div class="solution-card__text">
+                                Контроль состояния 
+                                водителя и система помощи 
+                                для предотвращения ДТП 
+                                на основе «машинного
+                                зрения» (ADAS)
+                            </div>
+                            <a href="#" class="solution-card__btn">Подробнее</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+                <div class="solution-blog__btn-wrapper">
+                    <a href="#" class="solution-blog__btn solution-blog__btn2">Больше решений <img src="./images/icons/cheked-icon.png" alt="cheked-icon" class="solution-blog__icon"></a>
                 </div>
             </div>
         </div>
@@ -497,6 +507,7 @@
             <div class="row">
                 <div class="col-xl-7">
                     <div class="title">НЕ НАШЛИ <span class="title-inner">ИДЕАЛЬНОГО РЕШЕНИЯ?</span></div>
+                    <img class="solution-info__img solution-info__img2" src="./images/solution-img_03.png" alt="">
                     <div class="solution-info__content">
                         <div class="solution-info__text">
                             Адаптируем лучшее под Ваш запрос:
@@ -520,21 +531,21 @@
                     </div>
                 </div>
                 <div class="col-xl-5">
-                    <img src="./images/solution-img_03.png" alt="">
+                    <img class="solution-info__img" src="./images/solution-img_03.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     
-    <section class="consult" id="consult">
+    <section id="consult" class="consult">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <div class="consult-picture">
                         <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                   <div class="consult-assist">
                       <div class="consult-assist__title">
                           Консультация от эксперта
@@ -572,15 +583,29 @@
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -632,10 +657,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -669,10 +694,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -700,17 +725,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">
