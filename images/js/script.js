@@ -30,16 +30,28 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
-        arrows: false,
         fade: true,
-        asNavFor: '.blog-page__image-small'
+        asNavFor: '.blog-page__image-small',
+        prevArrow: '<button class="prev-bg-btn slick-bg-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-bg-btn slick-bg-button"><i class="fa fa-chevron-right"></i></button>',
       });
       $('.blog-page__image-small').slick({
         slidesToShow: 3,
         infinite: false,
         slidesToScroll: 1,
         asNavFor: '.blog-page__image-big',
-        focusOnSelect: true
+        focusOnSelect: true,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 538,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
       $('.direction-work__slider').slick({
         dots: true,
@@ -125,21 +137,6 @@ $(document).ready(function () {
       formatter: function (n) {
         return n.replace(/,/g, ' ')
       }
-    })
-    $('#number1').counterUp({
-      time: 1000,
-    })
-    $('#number2').counterUp({
-      time: 1000,
-    })
-    $('#number3').counterUp({
-      time: 1000,
-    })
-    $('#number4').counterUp({
-      time: 1000,
-    })
-    $('#number5').counterUp({
-      time: 1000,
     })
     $(document).on('click', '.digital-table__btn', function(e){
       e.preventDefault();
