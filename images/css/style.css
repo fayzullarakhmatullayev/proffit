@@ -6627,7 +6627,7 @@ body {
   .actual .actual-card .solution-card__item {
     padding-top: 20px;
     padding-bottom: 5px;
-    padding-right: 6px;
+    padding-right: 10px;
   }
 
   .actual .actual-card .solution-card__img {
@@ -7146,5 +7146,6 @@ body {
   .actual .title {
     max-width: 230px;
     width: 100%;
+    padding-left: 10px;
   }
 }
