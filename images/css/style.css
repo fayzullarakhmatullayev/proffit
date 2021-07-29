@@ -2092,6 +2092,10 @@ body {
   font-weight: 300;
 }
 
+.blog-content__picture-date2 {
+  display: none;
+}
+
 .blog-content__img {
   display: block;
   width: 100%;
@@ -7243,19 +7247,27 @@ body {
 
   .blog-content__picture-inner {
     height: 100%;
+    padding: 20px;
   }
 
   .blog-content__picture-title {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 20px;
-    margin-top: 7%;
+    margin-bottom: 5px;
   }
 
   .blog-content__picture-text {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 20px;
+  }
+
+  .blog-content__picture-date {
+    display: none;
+  }
+
+  .blog-content__picture-date2 {
+    display: block;
+    margin-bottom: 5px;
   }
 
   .blog-content__title {
