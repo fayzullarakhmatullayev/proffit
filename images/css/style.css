@@ -6833,6 +6833,10 @@ body {
     padding-right: 5px;
   }
 
+  .solution .title {
+    padding-left: 15px;
+  }
+
   .solution .subtitle {
     margin-bottom: 40px;
   }
@@ -7205,6 +7209,8 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   .solution-page__link {
