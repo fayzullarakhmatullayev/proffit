@@ -2507,6 +2507,20 @@ body {
   opacity: 1;
 }
 
+.blog-page .slick-bg-button {
+  display: none !important;
+}
+
+.blog-page .slick-bg-button.slick-disabled {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.blog-page .prev-bg-btn {
+  right: 50px !important;
+  z-index: 5;
+}
+
 .blog-page .slick-arrow {
   position: absolute;
   top: 50%;
@@ -2527,13 +2541,13 @@ body {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset !important;
 }
 
-.blog-page .slick-next {
+.blog-page .next-btn {
   right: -260px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.blog-page .slick-prev {
+.blog-page .prev-btn {
   left: -260px;
   z-index: 5;
   -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -2604,7 +2618,7 @@ body {
   font-size: 23px;
   color: #0059ff;
   border-bottom: 1px dashed #0059ff;
-  font-weight: 40;
+  font-weight: 400;
 }
 
 .blog-page__more:hover {
@@ -6437,6 +6451,27 @@ body {
   .blog-article__news-form {
     max-width: 510px;
   }
+
+  .blog-page__image-big {
+    max-width: 612px;
+    margin: 0 auto;
+  }
+
+  .blog-page__image-imgbg {
+    height: auto;
+  }
+
+  .blog-page .next-btn {
+    right: -50px;
+  }
+
+  .blog-page .prev-btn {
+    left: -50px;
+  }
+
+  .blog-page__quote-img {
+    left: 15px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -7333,5 +7368,89 @@ body {
     top: 100px;
     left: 0;
     max-width: 100%;
+  }
+
+  .blog-page {
+    padding: 20px 0 200px;
+  }
+
+  .blog-page__title {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 305px;
+    margin-bottom: 17px;
+  }
+
+  .blog-page__date {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .blog-page__gallery {
+    margin-bottom: 45px;
+  }
+
+  .blog-page__image-imgbg {
+    margin-bottom: 100px !important;
+  }
+
+  .blog-page__image-small {
+    overflow: hidden;
+    height: 133px;
+  }
+
+  .blog-page__image-imgsm {
+    width: 188px !important;
+  }
+
+  .blog-page .slick-bg-button {
+    display: block !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    top: unset;
+    background: none;
+    font-size: 15px;
+    right: 0;
+    bottom: 12px;
+    cursor: pointer;
+    color: #182961;
+  }
+
+  .blog-page .slick-arrow {
+    display: none;
+  }
+
+  .blog-page .next-btn {
+    top: unset;
+    bottom: 180px;
+    right: 0;
+  }
+
+  .blog-page__quote {
+    margin: 80px 0 60px !important;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 168px;
+    padding: 25px 13px 20px;
+  }
+
+  .blog-page__wrapper {
+    margin: 60px 0 70px;
+  }
+
+  .blog-page__more {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .blog-page__share {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .blog-page__share-img {
+    margin-right: 18px;
   }
 }
