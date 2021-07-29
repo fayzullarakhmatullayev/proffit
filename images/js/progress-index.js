@@ -47,7 +47,7 @@ $(document).ready(function () {
     }
     
     var waypoint = new Waypoint({
-        element: document.getElementById('js-solution'),
+        element: $('#js-solution, #js-evolution'),
         handler: function(direction) {
             startCircleProgress();
         }
