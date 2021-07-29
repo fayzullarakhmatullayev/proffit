@@ -1919,6 +1919,18 @@ body {
   margin-bottom: 50px;
 }
 
+.actual .actual-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .actual .actual-card .solution-card__wrapper,
 .actual .actual-card .solution-card__item {
   max-width: 360px;
@@ -1938,6 +1950,11 @@ body {
 
 .actual .actual-card .solution-card__img {
   margin-bottom: 55px;
+  display: block;
+}
+
+.actual .actual-card .solution-card__img2 {
+  margin-bottom: 20px !important;
 }
 
 .actual .actual-card .solution-card__title {
@@ -1964,7 +1981,8 @@ body {
 }
 
 .actual .actual-card__list span {
-  width: 5px;
+  max-width: 5px;
+  width: 100%;
   height: 5px;
   background: #0059ff;
   border-radius: 50%;
@@ -1977,13 +1995,8 @@ body {
   background: #f5f8fb;
 }
 
-.find-title {
-  color: #182961;
-  font-size: 36.77px;
-  line-height: 42px;
-  text-transform: uppercase;
+.find .title {
   margin-bottom: 75px;
-  font-weight: 400;
 }
 
 .find-text,
@@ -6383,6 +6396,12 @@ body {
   .solution-info__img2 {
     display: block;
   }
+
+  .actual .actual-card {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -6589,6 +6608,63 @@ body {
   .solution-info .title {
     margin: 0 0 40px;
   }
+
+  .actual {
+    padding: 40px 0 60px;
+  }
+
+  .actual .actual-card {
+    max-width: 320px;
+  }
+
+  .actual .actual-card .solution-card__wrapper,
+  .actual .actual-card .solution-card__item {
+    max-width: 155px;
+    width: 100%;
+    min-height: 165px;
+  }
+
+  .actual .actual-card .solution-card__item {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 6px;
+  }
+
+  .actual .actual-card .solution-card__img {
+    margin-bottom: 35px;
+    height: 64px;
+    width: auto;
+  }
+
+  .actual .actual-card .solution-card__title {
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  .actual .actual-card__ul {
+    margin-top: 6px;
+  }
+
+  .actual .actual-card__list {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  .find {
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .find .title {
+    margin-bottom: 35px;
+  }
+
+  .find-br {
+    display: block;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -6707,7 +6783,7 @@ body {
   }
 
   .solution-card__text {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 16px;
   }
 
@@ -7046,5 +7122,29 @@ body {
 
   .solution-info__content {
     padding-left: 0;
+  }
+
+  .industries-intro {
+    padding: 110px 0 145px;
+  }
+
+  .industries-intro .intro-content__title {
+    max-width: 100%;
+  }
+
+  .industries-intro .intro-content__text {
+    max-width: 220px;
+    line-height: 22px;
+    margin-bottom: 100px;
+  }
+
+  .actual .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .actual .title {
+    max-width: 230px;
+    width: 100%;
   }
 }
