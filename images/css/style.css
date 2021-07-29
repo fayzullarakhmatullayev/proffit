@@ -7016,6 +7016,23 @@ body {
     width: 100%;
   }
 
+  .solutions-intro {
+    padding: 80px 0 90px;
+  }
+
+  .solutions-intro .intro-content__title {
+    max-width: 230px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .solutions-intro .intro-content__text {
+    line-height: 22px;
+    margin-bottom: 110px;
+    max-width: 230px;
+    width: 100%;
+  }
+
   .solution-page__nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
