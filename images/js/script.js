@@ -78,12 +78,35 @@ $(document).ready(function () {
         nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
       });
       $('.sertificate-wrapper').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         dots: true,
         infinite: false,
         prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+        {
+            breakpoint: 1199,
+             settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 991,
+             settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 567,
+             settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+            }
+        },
+        ]
       })
       $('.services-slider').slick({
         slidesToShow: 1,
@@ -129,13 +152,30 @@ $(document).ready(function () {
         $('.map-active').removeClass('map-active');
         $(this).addClass('map-active');
         
-        var href = $(this).attr('href');
+        let href = $(this).attr('href');
         $(href).addClass('map-active');
     });
+    $(document).on('click', '.answer-tab__btn1', function(e){
+        e.preventDefault();
+        $('.map-active1').removeClass('map-active1');
+        $(this).addClass('map-active1');
+        
+        let href = $(this).attr('href');
+        $(href).addClass('map-active1');
+    });
+    $(document).on('click', '.answer-tab__btn2', function(e){
+        e.preventDefault();
+        $('.map-active2').removeClass('map-active2');
+        $(this).addClass('map-active2');
+        
+        let href = $(this).attr('href');
+        $(href).addClass('map-active2');
+    });
+    $(document).on('click', '.answer-tab__btn3', function(e){e.preventDefault()});
     $('.js-chart-number, .js-about-number').counterUp({
       time: 1000,
       formatter: function (n) {
-        return n.replace(/,/g, ' ')
+        return n.replace(/,/g, ',');
       }
     })
     $(document).on('click', '.digital-table__btn', function(e){
@@ -178,15 +218,18 @@ $(document).ready(function () {
   $(document).on('click' ,'.nav-mobile__burger', function(){
     $('.nav-mobile__burger, .nav-menu').toggleClass('menu-open')
   })
-  $(document).on('click', '.menu-open .nav-menu__link-one ', function(e){
+  $(document).on('click', ".span-wrapper", function(){
+    $('.nav-menu').removeClass('menu-open')
+  }) 
+  $(document).on('click', '.menu-open .nav-menu__link-one', function(e){
     e.preventDefault();
     $('.nav-dropdown-one').slideToggle(300)
   })
-  $(document).on('click', '.menu-open .nav-menu__link-two ', function(e){
+  $(document).on('click', '.menu-open .nav-menu__link-two', function(e){
     e.preventDefault();
     $('.nav-dropdown-two').slideToggle(300)
   })
-  $(document).on('click', '.menu-open .nav-menu__link-three ', function(e){
+  $(document).on('click', '.menu-open .nav-menu__link-three', function(e){
     e.preventDefault();
     $('.nav-dropdown-three').slideToggle(300)
   })
@@ -202,5 +245,168 @@ $(document).ready(function () {
     e.preventDefault();
     $('.footer-blog__menu3').slideToggle(300);
   })
+  $('.about-paralix__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    dots: true,
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+    responsive: [
+        {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+        {
+            breakpoint: 1199,
+             settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+            }
+        },
+        {
+          breakpoint: 991,
+           settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+          }
+        },
+        {
+          breakpoint: 575,
+           settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+          }
+        },
+        {
+          breakpoint: 0,
+           settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+          }
+        },
+    ]
+  });
   
+  $('.packets-slider').slick({
+    mobileFirst: true,
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+    responsive: [
+    {
+        breakpoint: 9999,
+        settings: "unslick"
+    },
+    {
+        breakpoint: 991,
+         settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+        }
+    },
+    {
+        breakpoint: 963,
+         settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+        }
+    },
+    {
+        breakpoint: 0,
+         settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+        }
+    },
+    ]
+  })
+  $(document).on('click', '.partners-blog__btn', function(e){
+    e.preventDefault();
+    $('.hidden__items').slideDown(300).css('display', 'flex');
+  })
+  $('.numbers__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 727,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true
+        }
+      }
+    ]
+  })
+  $(function(){
+    $(window).bind("resize",function(){
+     if($(this).width() < 991){
+       $('.about-support__title').addClass('about-support__toggle');
+       $('.about-support__wrapper').css('display', 'none');
+     }
+     else{
+       $('.about-support__title').removeClass('about-support__toggle');
+       $('.about-support__wrapper').css('display', 'block');
+     }
+    }).resize();
+ });
+  $(document).on('click','.about-support__toggle', function(){
+    if(!$(this).hasClass('open')){
+      $('.about-support__wrapper').slideUp();
+      $(this).next().slideDown();
+      $(this).addClass('open');
+    } else {
+        $('.about-support__toggle').removeClass('open');
+        $('.about-support__wrapper').slideUp();
+    }
+  })
+  $(".control-slider, .fuel-info__slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 727,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
+  })
+  $('.answer-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
+  })
+  $('.why-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true, 
+    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 727,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  })
 });
