@@ -158,7 +158,29 @@ body {
   -webkit-box-shadow: unset;
   box-shadow: unset;
   padding: 10px 25px;
-  bottom: 150px;
+  bottom: unset;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+  -ms-flex-wrap: unset;
+  flex-wrap: unset;
+  position: unset;
+  min-height: unset;
+  left: unset;
+  max-width: unset;
+  width: unset;
+  background: #fff;
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  -ms-flex-line-pack: unset;
+  align-content: unset;
+  z-index: 10;
+  -webkit-transition: unset;
+  -o-transition: unset;
+  transition: unset;
 }
 
 .nav .menu-open .nav-dropdown__list {
