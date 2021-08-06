@@ -1709,8 +1709,6 @@ body {
   text-align: center;
   -webkit-box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.15);
   box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.15);
-  width: 186px;
-  min-height: 50px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
