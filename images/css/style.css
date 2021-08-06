@@ -93,8 +93,8 @@ body {
   width: 100%;
   background: #fff;
   padding: 40px 70px 40px 70px;
-  -webkit-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   -ms-flex-line-pack: justify;
@@ -106,11 +106,11 @@ body {
 }
 
 .nav-dropdown-one {
-  bottom: -299px;
+  bottom: -225px;
 }
 
 .nav-dropdown-two {
-  bottom: -255px;
+  bottom: -225px;
 }
 
 .nav-dropdown__list {
