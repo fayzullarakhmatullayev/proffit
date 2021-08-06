@@ -15,10 +15,19 @@ $(document).ready(function () {
         nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
     });
     $('.tasks-slider').slick({
-        slidesToShow:4,
+        slidesToShow: 4,
         slidesToScroll:1,
         prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [{
+          breakpoint: 1199, 
+          settings: {
+            slidesToShow:3,
+            slidesToScroll:1,
+          }
+        }
+         
+        ]
     })
     $('.article-slider').slick({
         dots: true,
