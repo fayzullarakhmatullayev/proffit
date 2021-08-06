@@ -30,9 +30,18 @@
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -82,9 +91,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -118,9 +130,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -157,12 +172,20 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -343,6 +366,10 @@
             </div>
             <div class="result-slider__wrapper">
                 <div class="result-slider__items">
+                    <div class="result-slider__content">
+                        снижение издержек 
+                        на ГСМ
+                    </div>
                     <div class="result-slider__circle js-result-slider__circle-one">
                         <div class="result-slider__circle-inner">
                             <div class="result-slider__number"><span class="js-fuel-number">38</span><span class="percent">%</span></div>
@@ -354,6 +381,11 @@
                     </div>
                 </div>
                 <div class="result-slider__items">
+                    <div class="result-slider__content">
+                        снижение 
+                        непроизводственных 
+                        потерь ГСМ
+                    </div>
                     <div class="result-slider__circle js-result-slider__circle-two">
                         <div class="result-slider__circle-inner">
                             <div class="result-slider__number"><span class="js-fuel-number">94</span><span class="percent">%</span></div>
@@ -366,6 +398,11 @@
                     </div>
                 </div>
                 <div class="result-slider__items">
+                    <div class="result-slider__content">
+                        исключение 
+                        фактов хищения/
+                        подмены топлива
+                    </div>
                     <div class="result-slider__circle js-result-slider__circle-three">
                         <div class="result-slider__circle-inner">
                             <div class="result-slider__number"><span class="js-fuel-number">99</span><span class="percent">%</span></div>
@@ -378,6 +415,11 @@
                     </div>
                 </div>
                 <div class="result-slider__items">
+                    <div class="result-slider__content">
+                        снижение затрат 
+                        на ТО и ремонты
+                         (качество топлива)
+                    </div>
                     <div class="result-slider__circle js-result-slider__circle-four">
                         <div class="result-slider__circle-inner">
                             <div class="result-slider__number"><span class="js-fuel-number">10</span><span class="percent">-<span class="js-fuel-number">14</span>%</span></div>
@@ -399,6 +441,99 @@
             <div class="control-wrapper">
                 <div class="control-content">
                     <div class="title">ИНСТРУМЕНТЫ <span class="title-inner">КОНТРОЛЯ</span></div>
+                    <div class="control-slider">
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        Бортовые 
+                                        контроллеры
+                                    </div>
+                                   <div class="control-card__item-price">
+                                     от 
+                                       <span class="control-card__item-cost">4000</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img1.png" alt="control-img1" class="control-card__item-img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        Доступ в ПО
+                                    </div>
+                                   <div class="control-card__item-price">
+                                     от 
+                                       <span class="control-card__item-cost">350</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img2.png" alt="control-img2" class="control-card__item-img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        Датчики уровня
+                                        топлива
+                                    </div>
+                                   <div class="control-card__item-price">
+                                     от 
+                                       <span class="control-card__item-cost">8000</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img3.png" alt="control-img3" class="control-card__item-img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        Подключение 
+                                        CAN
+                                    </div>
+                                   <div class="control-card__item-price">
+                                       <span class="control-card__item-cost">1500</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img4.png" alt="control-img4" class="control-card__item-img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        IQ Freeze
+                                    </div>
+                                   <div class="control-card__item-price">
+                                       <span class="control-card__item-cost">2500</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img5.png" alt="control-img5" class="control-card__item-img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="control-card__item">
+                                <div class="control-card__item-content">
+                                    <div class="control-card__item-text">
+                                        Аутсорсинг
+                                    </div>
+                                   <div class="control-card__item-price">
+                                       от 
+                                       <span class="control-card__item-cost">300</span>
+                                     руб.
+                                    </div>
+                                </div>
+                                <img src="./images/control-img6.png" alt="control-img6" class="control-card__item-img">
+                            </div>
+                        </div>
+                    </div>
                     <div class="advice-blog__item-ul">
                         <div class="advice-blog__item-list">
                             <span></span>
@@ -586,10 +721,75 @@
                     </ul>
                 </div>
             </div>
+            <div class="fuel-info__slider">
+                <div>
+                    <div class="fuel-info__card">
+                        <div class="fuel-info__card-title">
+                            Уведомления о событиях
+                        </div>
+                        <ul class="advice-blog__item-ul">
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Email
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Telegramm
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Push - уведомления
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="fuel-info__card">
+                        <div class="fuel-info__card-title">
+                            24/7 доступ к данным
+                        </div>
+                        <ul class="advice-blog__item-ul">
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Desktop
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Web версия
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                Мобильные приложения
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="fuel-info__card">
+                        <div class="fuel-info__card-title">
+                            Интеграция данных (API)
+                        </div>
+                        <ul class="advice-blog__item-ul">
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                С учетными системами: 1С, SAP, пр.
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                TMS, WMS и пр.
+                            </li>
+                            <li class="advice-blog__item-list">
+                                <span></span>
+                                С сервисами топливных карт
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <section class="market">
+    <section class="market fuel-market">
         <div class="container">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-xl-6">
@@ -650,40 +850,40 @@
                 <div class="partners-blog__items">
                     <img src="./images/partners-icon8.png" alt="partners-icon8" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon9.png" alt="partners-icon9" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="consult" id="consult">
+    <section id="consult" class="consult">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <div class="consult-picture">
                         <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                   <div class="consult-assist">
                       <div class="consult-assist__title">
                           Консультация от эксперта
@@ -705,7 +905,7 @@
                         </div>
                         <div class="consult-form__wrapper">
                             <div>
-                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий*"></textarea>
+                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий"></textarea>
                             </div>
                         </div>
                         
@@ -721,15 +921,29 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -781,10 +995,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -818,10 +1032,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -849,17 +1063,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">

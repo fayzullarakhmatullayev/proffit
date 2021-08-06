@@ -28,9 +28,18 @@
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -80,9 +89,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -116,9 +128,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -155,12 +170,20 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -170,11 +193,11 @@
         <div class="container">
             <div class="solutions-intro-wrapper">
                 <div class="intro-content">
-                    <h1 class="intro-content__title card-title">
+                    <div class="intro-content__title card-title">
                         КАРТЫ ТАХОГРАФА <span></span>
                         для российских <span></span>
                         и европейских тахографов
-                    </h1>  
+                    </div>  
                     <ul class="fuel-intro__menu">
                         <li class="fuel-intro__list taxografs-list"><img src="./images/icons/fuel-tick_03.png" alt="fuel-tick" class="fuel-intro__icon">
                             Срок изготовления от 7 дней до 10 дней
@@ -221,9 +244,12 @@
     <section class="card">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-content">
                         <div class="title card-page-title">Карта водителя СКЗИ</div>
+                        <div class="card-media card-media2">
+                            <img src="./images/driver-license_16.png" alt="driver-license" class="card-media__img">
+                        </div>
                         <div class="card-page-text">
                             Используется только на российских тахографах для поездок 
                             внутри страны. Самая популярная карта в РФ. Есть пин код.                            
@@ -232,10 +258,11 @@
                             Срок действия карты: 3 года
                         </div>
                         <div class="card-page-price">3 700 руб.</div>
+                        
                         <a href="#" class="intro-content__btn fuel-intro__btn card-page-btn">Заказать</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-media">
                         <img src="./images/driver-license_16.png" alt="driver-license" class="card-media__img">
                     </div>
@@ -247,9 +274,12 @@
     <section class="card card-page2">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-content">
                         <div class="title card-page-title">Карта водителя ЕСТР</div>
+                        <div class="card-media card-media2">
+                            <img src="./images/driver-license_20.png" alt="driver-license" class="card-media__img">
+                        </div>
                         <div class="card-page-text">
                             Используется на европейских тахографах. Без пин-кода.
                             С этой картой можно ездить в РФ и за рубежом.                                              
@@ -261,7 +291,7 @@
                         <a href="#" class="intro-content__btn fuel-intro__btn card-page-btn">Заказать</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-media">
                         <img src="./images/driver-license_20.png" alt="driver-license" class="card-media__img">
                     </div>
@@ -272,6 +302,10 @@
     
     <section class="passport">
         <div class="container">
+            <div class="title">
+                МИНИМУМ ДОКУМЕНТОВ
+                ДЛЯ ОФОРМЛЕНИЯ
+            </div>
             <div class="passport-blog">
                 <div class="passport-media">
                     <img src="./images/passport-img_24.png" alt="passport-img" class="passport-media__img">
@@ -304,7 +338,7 @@
         <div class="container">
             <div class="title">МОМЕНТАЛЬНОЕ оформление</div>
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="moment-item">
                         <div class="moment-item__title">В офисе компании</div>
                         <div class="moment-item__text">
@@ -319,7 +353,7 @@
                         <a href="#" class="intro-content__btn fuel-intro__btn moment-btn">Смотреть на карте</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="moment-item">
                         <div class="moment-item__subtitle">г. Набережные Челны</div>
                         <div class="moment-item__text moment-item__text2">
@@ -328,17 +362,18 @@
                         </div>
                         <div class="moment-item__subtitle">г. Казань</div>
                         <div class="moment-item__text">Тэцевская ул., 34</div>
+                        <a href="#" class="intro-content__btn fuel-intro__btn moment-btn2">Смотреть на карте</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="why why-2">
+    <section class="why why-2 why-3">
         <div class="container">
           <div class="title">почему мы</div>
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/card-why_28.png" alt="card-why" class="why-content__img">
                 <div class="why-content__title">
@@ -352,7 +387,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/card-why_30.png" alt="card-why" class="why-content__img">
                 <div class="why-content__title">
@@ -366,7 +401,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/card-why_32.png" alt="card-why" class="why-content__img">
                 <div class="why-content__title">
@@ -379,15 +414,60 @@
               </div>
             </div>
           </div>
+          <div class="why-slider">
+            <div>
+              <div class="why-content">
+                <img src="./images/icons/card-why_28.png" alt="taxo-services" class="why-content__img">
+                <div class="why-content__title">
+                    ОФИЦИАЛЬНАЯ ЗАЩИТА
+                    ВАШИХ ПЕРСОНАЛЬНЫХ ДАННЫХ
+                </div>
+                <div class="why-content__text">
+                    Входим в реестр операторов
+                    ПД РОСКОМНАДЗОРА.
+                    Лицензия ФСБ №0003052 от 30.05.2014  
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="why-content">
+                <img src="./images/icons/card-why_30.png" alt="taxo-services" class="why-content__img">
+                <div class="why-content__title">
+                    ВНИМАТЕЛЬНОЕ 
+                    И ОПЕРАТИВНОЕ ОФОРМЛЕНИЕ
+                </div>
+                <div class="why-content__text">
+                    Большой опыт и профессионализм:
+                    выдали свыше 150 000 карт 
+                    тахографа с 2013 года 
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="why-content">
+                <img src="./images/icons/card-why_32.png" alt="taxo-services" class="why-content__img">
+                <div class="why-content__title">
+                    НАС РЕКОМЕНДУЮТ. НАМ ДОВЕРЯЮТ
+                </div>
+                <div class="why-content__text">
+                    Более 70% новых клиентов приходит 
+                    к нам по рекомендациям 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
     
     <section class="card card-page2">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-content">
                         <div class="title card-page-title">Карта предприятия</div>
+                        <div class="card-media card-media2">
+                            <img src="./images/id-img_38.png" alt="id-img" class="card-media__img">
+                        </div>
                         <div class="card-page-text">
                             Предназначена для выгрузки, распечатки или блокировки 
                             данных тахографа. Производится одна на предприятие, 
@@ -398,7 +478,7 @@
                         <a href="#" class="intro-content__btn fuel-intro__btn card-page-btn">Заказать</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-media">
                         <img src="./images/id-img_38.png" alt="id-img" class="card-media__img">
                     </div>
@@ -424,11 +504,25 @@
         
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -480,10 +574,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -517,10 +611,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -548,17 +642,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">

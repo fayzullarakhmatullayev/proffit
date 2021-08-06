@@ -22,15 +22,24 @@
     
 </head>
 <body>
-    
-    <header class="header">
+<div class="wrapper">
+    <header class="header blog-header">
         <div class="container">
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -80,9 +89,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -116,9 +128,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -155,21 +170,31 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
                 </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     
     <section class="oborod-intro">
+        <img src="./images/oborod-intro__img_03.jpg" alt="consult-header_03" class="oborod-intro__bg">
+        <div class="overlay"></div> 
         <div class="container">
             <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-lg-5">
                     <div class="oborod-intro__content">
                         <div class="title">
                             Более 2000 видов 
@@ -191,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-lg-7">
                     <div class="oborod-intro__consult">
                         <img src="./images/consult-header_03.png" alt="consult-header" class="oborod-intro__call">
                         <ul class="advice-blog__item-ul">
@@ -212,9 +237,26 @@
         </div>
     </section>
     
+    <div class="oborod-intro-text">
+        <div class="container">
+            <div class="oborod-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                Широкий выбор готовых и проверенных 
+                комбинаций для решения ваших задач
+            </div>
+            <div class="oborod-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                Официальные представители ведущих
+                марок оборудования
+            </div>
+            <div class="oborod-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="oborod-intro__icon">
+                Большой срок гарантии на оборудование
+            </div>
+        </div>
+    </div>
+    
     <section class="oborod-menu">
         <div class="container">
-            <div class="title">БОРТОВЫЕ <span class="title-inner">КОНТРОЛЛЕРЫ</span></div>
+            <div class="title">ВЫБЕРИТЕ что 
+                <span class="title-inner">ВАС ИНТЕРЕСУЕТ</span></div>
             <nav class="oborod-nav">
                 <a href="#bitovoy" class="oborod-nav__link">Бортовые контроллеры</a>
                 <a href="#topliva" class="oborod-nav__link">Датчики уровня топлива</a>
@@ -229,7 +271,7 @@
                 <a href="#freeze" class="oborod-nav__link">IQ Freeze</a>
                 <a href="#radio" class="oborod-nav__link">Радиометки</a>
                 <a href="#taxograf" class="oborod-nav__link">Тахографы</a>
-                <a href="#display" class="oborod-nav__link">Дисплеи связи с водителем</a>
+                <a href="#display" class="oborod-nav__link oborod-nav__link-last">Дисплеи связи с водителем</a>
             </nav>
             <div class="oborod-menu__text">*Возможность проводного и беспроводного подключения</div>
         </div>
@@ -240,6 +282,9 @@
             <div class="oborod-blog">
                 <div class="oborod-blog__content">
                     <div class="title">БОРТОВЫЕ <span class="title-inner">КОНТРОЛЛЕРЫ</span></div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <img src="./images/datchik-img_07.png" alt="datchik-img" class="oborod-blog__img">
+                    </div>
                     <div class="oborod-blog__text">
                         Основа мониторинга транспорта. Устройство ведет журнал передвижения транспортного средства, фиксирует и передает параметры его работы. Множество полезых функций, подключаемых датчиков, внешние/внутренние антенны.
                     </div>
@@ -267,6 +312,9 @@
                 <div class="oborod-blog__content">
                     <div class="title">Датчики уровня 
                          <span class="title-inner">топлива</span></div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <img src="./images/datchik-img_11.png" alt="datchik-img" class="oborod-blog__img oborod-blog__img2">
+                    </div>
                     <div class="oborod-blog__text">
                         Идеально подходит для удаленного контроля уровня топлива 
                         в конкретный момент времени, показывает изменения уровня топлива (сливы, заправки, утечки).
@@ -288,7 +336,11 @@
             <div class="oborod-blog">
                 <div class="oborod-blog__content">
                     <div class="title">ДАТЧИКИ НАГРУЗКИ 
-                         <span class="title-inner">НА ОСЬ</span></div>
+                         <span class="title-inner">НА ОСЬ</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Датчик нагрузки на ось позволяет в режиме онлайн контролировать реальную загрузку автомобиля и равномерное распределение тяжести по осям на транспорте 
                         (где нет возможности получить эти данные по CAN шине)
@@ -333,7 +385,11 @@
                 </div>
                 <div class="oborod-blog__content">
                     <div class="title">ДАТЧИКИ СОХРАННОСТИ 
-                         <span class="title-inner">ГРУЗА</span></div>
+                         <span class="title-inner">ГРУЗА</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         В зависимости от конкретной задачи используется:    
                     </div>
@@ -377,7 +433,11 @@
             <div class="oborod-blog">
                 <div class="oborod-blog__content">
                     <div class="title">ДАТЧИКИ ДАВЛЕНИЯ 
-                         <span class="title-inner">В ШИНАХ</span></div>
+                         <span class="title-inner">В ШИНАХ</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Отслеживайте температуру и давление в шинах в режиме реального времени! Получайте уведомления о любых отклонениях для возможности оперативного реагирования.   
                     </div>
@@ -444,7 +504,11 @@
             <div class="oborod-blog oborod-uchet2">
                 <div class="oborod-blog__content">
                     <div class="title">ДАТЧИКИ КОНТРОЛЯ РАБОТЫ 
-                    <span class="title-inner">НАВЕСНЫХ МЕХАНИЗМОВ</span></div>
+                        <span class="title-inner">НАВЕСНЫХ МЕХАНИЗМОВ</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Вы можете видеть сколько было проведено манипуляций, место, продолжительность работ и другие параметры 
                         по работе навесного оборудования.  
@@ -495,7 +559,11 @@
                 </div>
                 <div class="oborod-blog__content">
                     <div class="title">Считывание 
-                         <span class="title-inner">CAN</span></div>
+                         <span class="title-inner">CAN</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Всего 1 контроллер и опыт наших специалистов и вы сможете видеть самую точную информацию о разных параметрах работы вашего ТС.    
                     </div>
@@ -513,7 +581,11 @@
             <div class="oborod-blog oborod-uchet2">
                 <div class="oborod-blog__content">
                     <div class="title">СВЕТОвые и звуковые 
-                         <span class="title-inner">индикаторы</span></div>
+                         <span class="title-inner">индикаторы</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Специальные устройства для уведомления водителя
                         о нарушении установленных норм вождения, состоянии рабочего оборудования.                           
@@ -538,7 +610,11 @@
                 </div>
                 <div class="oborod-blog__content">
                     <div class="title">СЕКРЕТНЫЕ 
-                         <span class="title-inner title2-inner"> МАЯЧКИ</span></div>
+                         <span class="title-inner title2-inner"> МАЯЧКИ</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Надежный, автономный, незаметный для злоумышленника передатчик местонахождения ТС.    
                     </div>
@@ -556,6 +632,9 @@
             <div class="oborod-blog oborod-uchet2">
                 <div class="oborod-blog__content">
                     <div class="title">IQ FREEZE</div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Система контроля перевозки температурных грузов 
                         и управления парком рефрижераторной техники. Работает 
@@ -602,7 +681,11 @@
                 </div>
                 <div class="oborod-blog__content">
                     <div class="title">РАДИОметки  
-                         <span class="title-inner title2-inner"> (rfid/bLUETOOTH)</span></div>
+                         <span class="title-inner title2-inner"> (rfid/bLUETOOTH)</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Решение для контроля прицепного оборудования, прицепов.   
                     </div>
@@ -641,6 +724,9 @@
             <div class="oborod-blog">
                 <div class="oborod-blog__content">
                     <div class="title">ТАХОГРАФЫ</div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <img src="./images/datchik-img_15.png" alt="datchik-img" class="oborod-blog__img">
+                    </div>
                     <div class="oborod-blog__text">
                         Контрольное устройство, устанавливаемое на борту автотранспортных средств. Предназначено для контроля пробега, скорости, времени в пути, соблюдения режима труда 
                         и отдыха водителей.  
@@ -667,7 +753,11 @@
                 </div>
                 <div class="oborod-blog__content">
                     <div class="title">ДИСПЛЕЙ СВЯЗИ 
-                         <span class="title-inner"> С ВОДИТЕЛЕМ</span></div>
+                         <span class="title-inner"> С ВОДИТЕЛЕМ</span>
+                    </div>
+                    <div class="oborod-blog__media oborod-blog__media2">
+                        <div class="oborod-blog__block"></div>
+                    </div>
                     <div class="oborod-blog__text">
                         Предназначен для отображения ключевых параметров работы транспорта. Устройство оповещает водителя и диспетчера 
                         о состоянии рабочих узлов, информирует о нарушении правил вождения.   
@@ -685,12 +775,12 @@
     <section id="consult" class="consult">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <div class="consult-picture">
                         <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                   <div class="consult-assist">
                       <div class="consult-assist__title">
                           Консультация от эксперта
@@ -712,7 +802,7 @@
                         </div>
                         <div class="consult-form__wrapper">
                             <div>
-                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий*"></textarea>
+                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий"></textarea>
                             </div>
                         </div>
                         
@@ -732,11 +822,25 @@
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -788,10 +892,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -825,10 +929,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -856,17 +960,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">
@@ -894,6 +998,6 @@
             </div>
         </div>
     </footer>
-    
+</div>    
   </body>
   </html>

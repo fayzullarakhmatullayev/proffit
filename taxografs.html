@@ -30,9 +30,18 @@
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -82,9 +91,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -118,9 +130,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -157,16 +172,24 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
                 </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </nav>
         </div>
-    </header>
+      </header>
     
     <section class="intro taxografs-intro">
         <div class="container">
@@ -362,8 +385,8 @@
     
     <section class="block-taxo">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
+            <div class="block-taxo__wrapper">
+                <div class="block-taxo__items">
                     <div class="digital-card">
                         <div class="digital-card__title">Блок СКЗИ (замена)</div>
                         <div class="digital-card__price">23 500 руб.</div>
@@ -374,7 +397,7 @@
                         <a href="#" class="intro-content__btn fuel-intro__btn">Заказать</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="block-taxo__items">
                     <img src="./images/taxografs-img_12.png" alt="taxografs-img" class="block-taxo__img">
                 </div>
            </div>
@@ -384,11 +407,11 @@
     <section class="block-taxo2">
         <div class="container">
             <div class="title">цифровые тахографы ЕСТР <span class="title-inner">для МЕЖДУНАРОДНЫХ перевозок</span></div>
-            <div class="row">
-                <div class="col-xl-6">
+            <div class="block-taxo__wrapper">
+                <div class="block-taxo__wrapper">
                     <img src="./images/taxografs-img_15.png" alt="taxografs-img" class="block-taxo__img">
                 </div>
-                <div class="col-xl-6">
+                <div class="block-taxo__wrapper">
                     <div class="digital-card">
                         <div class="digital-card__title">VDO Continental 1381</div>
                         <div class="digital-card__price block-taxo2__price">42 000 руб.*</div>
@@ -458,7 +481,7 @@
         <div class="container">
           <div class="title">почему <span class="title-inner">мы</span></div>
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/taxo-services_27.png" alt="taxo-services" class="why-content__img">
                 <div class="why-content__title">
@@ -470,7 +493,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/taxo-services_22.png" alt="taxo-services" class="why-content__img">
                 <div class="why-content__title">
@@ -482,7 +505,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4">
               <div class="why-content">
                 <img src="./images/icons/taxo-services_24.png" alt="taxo-services" class="why-content__img">
                 <div class="why-content__title">
@@ -495,6 +518,44 @@
               </div>
             </div>
           </div>
+          <div class="why-slider">
+                <div>
+                    <div class="why-content">
+                        <img src="./images/icons/taxo-services_27.png" alt="taxo-services" class="why-content__img">
+                        <div class="why-content__title">
+                        ОФИЦИАЛЬНАЯ МАСТЕРСКАЯ
+                        </div>
+                        <div class="why-content__text">
+                        Лицензия ФСБ №0003052 от 30.05.2014
+                        Клейма №РФ0075, RUS337
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="why-content">
+                      <img src="./images/icons/taxo-services_22.png" alt="taxo-services" class="why-content__img">
+                      <div class="why-content__title">
+                        ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА
+                      </div>
+                      <div class="why-content__text">
+                        Оснащено более 45 000 ТС, выдано 
+                        более 150 000 карт тахографа
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="why-content">
+                      <img src="./images/icons/taxo-services_24.png" alt="taxo-services" class="why-content__img">
+                      <div class="why-content__title">
+                        НАС РЕКОМЕНДУЮТ. НАМ ДОВЕРЯЮТ
+                      </div>
+                      <div class="why-content__text">
+                        Более 70% новых клиентов приходит 
+                        к нам по рекомендациям
+                      </div>
+                    </div>
+                  </div>
+            </div>
           <div class="why-text">
             ООО ПКФ «Проффит Консалтинг» — крупнейший поставщик тахографических услуг в республике Татарстан, официальный представитель брендов
             тахографической продукции, допущенных на территории РФ.Состоим в перечне тахографических мастерских ФБУ «Росавтотранс», в реестре операторов
@@ -508,36 +569,23 @@
     
     <section class="sertificate">
         <div class="container">
-            <div class="title">сертификаты и лицензии</div>
+            <div class="title">сертификаты и <span class="title-inner">лицензии</span></div>
             <div class="sertificate-wrapper">
-                <div class="sertificate-slider">
-                    <a href="./images/sertificates-img_18.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_18.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_24.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_24.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_21.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_21.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_27.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_27.png" alt="sertificates-img">
-                    </a>
-                </div>
-                <div class="sertificate-slider">
-                    <a href="./images/sertificates-img_18.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_18.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_24.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_24.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_21.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_21.png" alt="sertificates-img">
-                    </a>
-                    <a href="./images/sertificates-img_27.png" data-fancybox="gallery" class="sertificate-item">
-                        <img src="./images/sertificates-img_27.png" alt="sertificates-img">
-                    </a>
-                </div>
+                <a href="./images/sertificates-img_18.png" data-fancybox="gallery" class="sertificate-item">
+                    <img src="./images/sertificates-img_18.png" alt="sertificates-img">
+                </a>
+                <a href="./images/sertificates-img_24.png" data-fancybox="gallery" class="sertificate-item">
+                    <img src="./images/sertificates-img_24.png" alt="sertificates-img">
+                </a>
+                <a href="./images/sertificates-img_21.png" data-fancybox="gallery" class="sertificate-item">
+                    <img src="./images/sertificates-img_21.png" alt="sertificates-img">
+                </a>
+                <a href="./images/sertificates-img_27.png" data-fancybox="gallery" class="sertificate-item">
+                    <img src="./images/sertificates-img_27.png" alt="sertificates-img">
+                </a>
+                <a href="./images/sertificates-img_18.png" data-fancybox="gallery" class="sertificate-item">
+                    <img src="./images/sertificates-img_18.png" alt="sertificates-img">
+                </a>
             </div>
         </div>
     </section>
@@ -545,17 +593,20 @@
     <div class="card">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-content">
                         <div class="title">не забудьте <span class="title-inner">карту тахографа</span></div>
                         <div class="subtitle">
                             Для работы с тахографом каждому водителю 
                             требуется карта тахографа
                         </div> 
+                        <div class="card-media card-media2">
+                            <img src="./images/driver-license_34.png" alt="driver-license" class="card-media__img">
+                        </div>
                         <a href="#" class="intro-content__btn fuel-intro__btn">Подробнее</a>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                     <div class="card-media">
                         <img src="./images/driver-license_34.png" alt="driver-license" class="card-media__img">
                     </div>
@@ -596,11 +647,25 @@
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -652,10 +717,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -689,10 +754,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -720,17 +785,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">

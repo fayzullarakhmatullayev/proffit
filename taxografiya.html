@@ -28,9 +28,18 @@
         <nav class="nav">
             <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
             <ul class="nav-menu">
+                <li class="nav-menu__close">
+                    <div class="span-wrapper">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
                 <li class="nav-menu__list">
-                    <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                    <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                     <ul class="nav-dropdown nav-dropdown-one">
+                        <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                            <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                        </li>  
                         <li class="nav-dropdown__list">
                             <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                         </li>  
@@ -80,9 +89,12 @@
                     </ul>
                 </li>
                 <li class="nav-menu__list">
-                    <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                    <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                         Для кого <i class="fa fa-chevron-down"></i></a>
                     <ul class="nav-dropdown nav-dropdown-two">
+                        <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                            <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                        </li>  
                         <li class="nav-dropdown__list">
                             <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                         </li>  
@@ -116,9 +128,12 @@
                     </ul>
                 </li>
                 <li class="nav-menu__list">
-                    <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                    <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                         Оборудование <i class="fa fa-chevron-down"></i></a>
-                    <ul class="nav-dropdown">
+                    <ul class="nav-dropdown nav-dropdown-three">
+                        <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                            <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                        </li>  
                         <li class="nav-dropdown__list">
                             <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                         </li>  
@@ -155,12 +170,20 @@
                     <a href="about.html" class="nav-menu__link">О компании</a>
                 </li>
                 <li class="nav-menu__list">
-                    <a href="contact.html" class="nav-menu__link">Контакты</a>
+                    <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                 </li>
             </ul>
             <div class="nav-contact">
                 <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                 <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+            </div>
+            <div class="nav-mobile">
+                <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                <div class="nav-mobile__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </div>
@@ -175,8 +198,8 @@
                     </h1>  
                     <ul class="fuel-intro__menu">
                         <li class="fuel-intro__list monitoring-intro__list">
-                            Полный комплекс услуг по тахографии.
-                            Работаем как с юридическими,
+                          <span>Полный комплекс услуг по тахографии.</span>  
+                            Работаем как с юридическими,<br>
                             так и с физическими лицами
                         </li>
                     </ul>
@@ -270,6 +293,57 @@
                 </div>
               </div>
             </div>
+            <div class="direction-info__content">
+                  <div class="direction-info__nav">
+                      <div class="direction-info__title">               
+                        ТАХОГРАФЫ<img src="./images/chevron-tab_03.png" alt="chevron-tab" class="direction-info__icon">
+                      </div>
+                      <div class="direction-info__ul">
+                        <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                        <div class="advice-blog__item-ul">
+                          <div class="advice-blog__item-list"><span></span>
+                            Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO 3283 (СКЗИ, для перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO Continental 1381 (ЕСТР, для международных перевозок)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="direction-info__title direction-info__title2">КАРТЫ ТАХОГРАФА <img src="./images/chevron-tab_03.png" alt="chevron-tab" class="direction-info__icon"></div>
+                      <div class="direction-info__ul">
+                        <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                        <div class="advice-blog__item-ul">
+                          <div class="advice-blog__item-list"><span></span>
+                            Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO 3283 (СКЗИ, для перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO Continental 1381 (ЕСТР, для международных перевозок)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="direction-info__title direction-info__title2">АНАЛИЗ ДАННЫХ С ТАХОГРАФА<img src="./images/chevron-tab_03.png" alt="chevron-tab" class="direction-info__icon"></div>
+                      <div class="direction-info__ul">
+                        <div class="product-content__item-subtitle">Официальные дистрибьюторы</div>
+                        <div class="advice-blog__item-ul">
+                          <div class="advice-blog__item-list"><span></span>
+                            Атол Drive Smart (СКЗИ, дл   я перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO 3283 (СКЗИ, для перевозок по РФ)
+                          </div>
+                          <div class="advice-blog__item-list"><span></span>
+                            VDO Continental 1381 (ЕСТР, для международных перевозок)
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+          </div>  
         </div>
     </section>
     
@@ -364,6 +438,56 @@
             </div>
           </div>
         </div>
+        <div class="fuel-info__slider">
+          <div>
+              <div class="fuel-info__card">
+                  <div class="fuel-info__card-title">
+                    <img class="must-icon" src="./images/icons/must-icon1.jpg" alt="must-icon">
+                    Категория M2
+                  </div>
+                  <div class="taxografiya-content__text must-content__text">
+                    Транспортные средства, используемые для перевозки пассажиров,имеющие, помимо места водителя, более 
+                    восьми мест для сидения, технически допустимая максимальная масса которых не превышает 5 т.
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="fuel-info__card">
+                  <div class="fuel-info__card-title">
+                    <img class="must-icon" src="./images/icons/must-icon2.jpg" alt="must-icon">
+                    Категория M3
+                  </div>
+                  <div class="taxografiya-content__text must-content__text">
+                    Транспортные средства, используемые для перевозки пассажиров, имеющие, помимо места водителя, более
+                    восьми мест для сидения, технически допустимая максимальная масса которых превышает 5 т
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="fuel-info__card">
+                  <div class="fuel-info__card-title">
+                    <img class="must-icon" src="./images/icons/must-icon3.jpg" alt="must-icon">
+                    Категория N2
+                  </div>
+                  <div class="taxografiya-content__text must-content__text">
+                    Транспортные средства, предназначенные для перевозки грузов, имеющие технически допустимую 
+                    максимальную массу свыше 3,5 т, но не более 12 т.
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="fuel-info__card">
+                  <div class="fuel-info__card-title">
+                    <img class="must-icon" src="./images/icons/must-icon4.jpg" alt="must-icon">
+                    Категория N3
+                  </div>
+                  <div class="taxografiya-content__text must-content__text">
+                    Транспортные средства, предназначенные для перевозки грузов, имеющие технически допустимую
+                    максимальную массу более 12 т.
+                  </div>
+              </div>
+          </div>
+      </div>
       </div>
     </section>
     
@@ -371,7 +495,7 @@
       <div class="container">
         <div class="title">почему <span class="title-inner">мы</span></div>
         <div class="row">
-          <div class="col-xl-4">
+          <div class="col-xl-4 col-lg-4">
             <div class="why-content">
               <img src="./images/icons/taxo-services_27.png" alt="taxo-services" class="why-content__img">
               <div class="why-content__title">
@@ -383,7 +507,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 col-lg-4">
             <div class="why-content">
               <img src="./images/icons/taxo-services_22.png" alt="taxo-services" class="why-content__img">
               <div class="why-content__title">
@@ -395,7 +519,45 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 col-lg-4">
+            <div class="why-content">
+              <img src="./images/icons/taxo-services_24.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                НАС РЕКОМЕНДУЮТ. НАМ ДОВЕРЯЮТ
+              </div>
+              <div class="why-content__text">
+                Более 70% новых клиентов приходит 
+                к нам по рекомендациям
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-slider">
+          <div>
+            <div class="why-content">
+              <img src="./images/icons/taxo-services_27.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                ОФИЦИАЛЬНАЯ МАСТЕРСКАЯ
+              </div>
+              <div class="why-content__text">
+                Лицензия ФСБ №0003052 от 30.05.2014
+                Клейма №РФ0075, RUS337
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="why-content">
+              <img src="./images/icons/taxo-services_22.png" alt="taxo-services" class="why-content__img">
+              <div class="why-content__title">
+                ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА
+              </div>
+              <div class="why-content__text">
+                Оснащено более 45 000 ТС, выдано 
+                более 150 000 карт тахографа
+              </div>
+            </div>
+          </div>
+          <div>
             <div class="why-content">
               <img src="./images/icons/taxo-services_24.png" alt="taxo-services" class="why-content__img">
               <div class="why-content__title">
@@ -421,55 +583,58 @@
     
     <section class="partners taxo-partners">
       <div class="container">
-          <div class="partners-blog">
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon1.png" alt="partners-icon1" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon2.png" alt="partners-icon2" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon3.png" alt="partners-icon3" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon4.png" alt="partners-icon4" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon5.png" alt="partners-icon5" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon6.png" alt="partners-icon6" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon7.png" alt="partners-icon7" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon8.png" alt="partners-icon8" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon9.png" alt="partners-icon9" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
-              </div>
-              <div class="partners-blog__items">
-                  <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
-              </div>
+        <div class="partners-blog">
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon1.png" alt="partners-icon1" class="partners-blog__items-img">
           </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon2.png" alt="partners-icon2" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon3.png" alt="partners-icon3" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon4.png" alt="partners-icon4" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon5.png" alt="partners-icon5" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon6.png" alt="partners-icon6" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon7.png" alt="partners-icon7" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items">
+              <img src="./images/partners-icon8.png" alt="partners-icon8" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items hidden__items">
+              <img src="./images/partners-icon9.png" alt="partners-icon9" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items hidden__items">
+              <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items hidden__items">
+              <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items hidden__items">
+              <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items partners-blog__items2">
+              <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items partners-blog__items2">
+              <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
+          </div>
+          <div class="partners-blog__items partners-blog__items2">
+              <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
+          </div>
+        </div>
       </div>
-  </section>
+      <div class="solution-blog__btn-wrapper">
+        <a href="#" class="solution-blog__btn partners-blog__btn">Больше клиентов <img src="./images/icons/cheked-icon.png" alt="cheked-icon" class="solution-blog__icon"></a>
+      </div>
+    </section>
   
   <div class="taxo-contact" id="consult">
     <div class="container">
@@ -504,11 +669,25 @@
     
   <footer class="footer">
     <div class="container">
+      <div class="footer-blog__contact footer-blog__contact2">
+          <div class="footer-blog__contact2-wrapper">
+              <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+              <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+          </div>
+          <div class="footer-blog__social">
+                <a href="#" class="footer-blog__social-link">
+                  <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                </a>
+                <a href="#" class="footer-blog__social-link">
+                  <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                </a>
+          </div>
+      </div>
         <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-4 col-sm-12">
                 <div class="footer-blog">
-                    <a href="solutions.html" class="footer-blog__title">Решения</a>
-                    <ul class="footer-blog__menu">
+                    <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                    <ul class="footer-blog__menu footer-blog__menu1">
                           <li class="footer-blog__list">
                             <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                           </li>
@@ -560,10 +739,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-md-3 col-sm-12">
                 <div class="footer-blog">
-                    <a href="industries.html" class="footer-blog__title">Для кого</a>
-                    <ul class="footer-blog__menu">
+                    <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                    <ul class="footer-blog__menu footer-blog__menu2">
                           <li class="footer-blog__list">
                             <a href="" class="footer-blog__link">Грузовой транспорт</a>
                           </li>
@@ -597,10 +776,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-md-3 col-sm-12">
                 <div class="footer-blog">
-                    <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                    <ul class="footer-blog__menu">
+                    <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                    <ul class="footer-blog__menu footer-blog__menu3">
                           <li class="footer-blog__list">
                             <a href="" class="footer-blog__link">Бортовой контроллер</a>
                           </li>
@@ -628,17 +807,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-md-2 col-sm-12">
                 <div class="footer-blog footer-blog2">
-                    <ul class="footer-blog__menu">
+                    <ul class="footer-blog__menu-items">
                           <li class="footer-blog__list">
-                            <a href="blog.html" class="footer-blog__link2">Блог</a>
+                            <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                           </li>
                           <li class="footer-blog__list">
-                            <a href="about.html" class="footer-blog__link2">О компании</a>
+                            <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                           </li>
                           <li class="footer-blog__list">
-                            <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                            <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                           </li>
                     </ul>
                     <div class="footer-blog__contact">

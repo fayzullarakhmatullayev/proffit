@@ -22,15 +22,25 @@
     
 </head>
 <body>
-    
+<div class="wrapper">
+
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -80,9 +90,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -116,9 +129,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -155,12 +171,20 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
                     <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -173,12 +197,15 @@
                 Легкий коммерческий транспорт
             </div>
             <div class="commercial-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                <img src="./images/icons/fuel-tick_03.png" alt="monitoring-icon" class="commercial-intro__img2">
                 Снижение затрат на ремонты
             </div>
             <div class="commercial-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                <img src="./images/icons/fuel-tick_03.png" alt="monitoring-icon" class="commercial-intro__img2">
                 Повышение производительности парка
             </div>
             <div class="commercial-intro__list"><img src="./images/icons/monitoring-icon_03.png" alt="monitoring-icon" class="commercial-intro__img">
+                <img src="./images/icons/fuel-tick_03.png" alt="monitoring-icon" class="commercial-intro__img2">
                 Соблюдение РТО и требований закона к ТС
             </div>
             <a href="#consult" class="intro-content__btn fuel-intro__btn commercial-intro__btn">Консультация</a>
@@ -186,15 +213,19 @@
     </section>
     
     <section class="withus">
-        <div class="container">
-            <div class="withus-top">
-                <div class="withus-top__text">
-                    <span class="withus-top__span">Легкий коммерческий транспорт</span>
-                     — наиболее часто используемый вид техники в сегменте малого и среднего бизнеса. В основном задействован в перевозке малотоннажных грузов в условиях города и трассы. 
-                    Основными показателями работы транспорта являются контроль местонахождения, соблюдение и выполнения маршрутов, контроль геозон, скоростного режима, манера вождения водителя и сохранность перевозимого груза
+        <div class="withus-top__wrapper">
+            <div class="container">
+                <div class="withus-top">
+                    <div class="withus-top__text">
+                        <span class="withus-top__span">Легкий коммерческий транспорт</span>
+                         — наиболее часто используемый вид техники в сегменте малого и среднего бизнеса. В основном задействован в перевозке малотоннажных грузов в условиях города и трассы. <span class="span2"></span>
+                        Основными показателями работы транспорта являются контроль местонахождения, соблюдение и выполнения маршрутов, контроль геозон, скоростного режима, манера вождения водителя и сохранность перевозимого груза
+                    </div>
                 </div>
             </div>
-            <div class="withus-blog">
+        </div>
+        <div class="withus-blog">
+            <div class="container">
                 <div class="title">
                     будьте с нами 
                 </div>
@@ -213,14 +244,14 @@
                     </li>
                 </ul>
             </div>
+            
         </div>
     </section>
     
     <section class="answer answer2">
         <div class="container">
             <div class="title"><span class="title-inner">экспертная подборка </span>решений для вашей отрасли</div>
-            
-            <div class="contact-tab answer-tab">
+            <div class="contact-tab answer-tab answer2-tab">
                 <div class="contact-tab__nav">
                     <a href="#map1" class="contact-tab__btn answer-tab__btn answer2-btn map-active" data-toggle="tab">1   Мониторинг</a>
                     <a href="#map2" class="contact-tab__btn answer-tab__btn answer2-btn" data-toggle="tab">2     Скоринг</a>
@@ -406,6 +437,207 @@
                 </div>
 
             </div>
+            <div class="answer-slider">
+                <div>
+                    <div class="contact-tab answer-tab">
+                        <div class="contact-tab__nav">
+                            <a href="#map6" class="answer-tab__btn answer-tab__btn1 map-active1" data-toggle="tab">1   Мониторинг</a>
+                            <a href="#map7" class="answer-tab__btn answer-tab__btn1" data-toggle="tab">2     Скоринг</a>
+                        </div>
+                        <div class="contact-tab__body answer-tab__body  map-active1" id="map6">
+                            <div class="answer-tab__content">
+                                <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                                <div class="answer-tab__inner answer-inner2">
+                                    <div class="answer-subtitle2">мониторинг транспорта  и контролЬ топлива</div>
+                                    <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                                    <div class="advice-blog__item-ul">
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            исключение махинаций с топливом и работой на технике
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            повышение экономичности вождения, сокращение пережогов
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            предотвращение повышенного износа, сохранение гарантии на технику
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение простоев, перепробегов
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение затрат на ГСМ, ТО и ремонты
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            рост производительности труда и дисциплины персонала   
+                                        </div>                           
+                                    </div>
+                                    <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-tab__body answer-tab__body" id="map7">
+                            <div class="answer-tab__content">
+                                <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                                <div class="answer-tab__inner answer-inner2">
+                                    <div class="answer-subtitle2">Умная оценка стиля вождения
+                                    </div>
+                                    <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                                    <div class="advice-blog__item-ul">
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            выявление опасных тенденций
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            корректировка манеры езды
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            корректировка систем мотивации водителей
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение числа ДТП и аварийных ситуаций
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            повышение общей безопасности перевозок 
+                                        </div>                         
+                                    </div>
+                                    <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-tab answer-tab">
+                        <div class="contact-tab__nav contact-tab__nav2">
+                            <a href="#map8" class="answer-tab__btn answer-tab__btn2 map-active2" data-toggle="tab">3     АнтиДТП</a>
+                            <a href="#map9" class="answer-tab__btn answer-tab__btn2" data-toggle="tab">4 Теле
+                                медосмотр</a>
+                        </div>
+                        <div class="contact-tab__body answer-tab__body map-active2" id="map8">
+                            <div class="answer-tab__content">
+                                <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                                <div class="answer-tab__inner answer-inner2">
+                                    <div class="answer-subtitle2 answer-subtitle3">Контроль состояния водителя и система помощи 
+                                        для предотвращения ДТП на основе «машинного зрения» (ADAS)
+                                        
+                                    </div>
+                                    <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                                    <div class="advice-blog__item-ul">
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение числа ДТП
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение финансовых и юридических рисков от последствий ДТП
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            моментальное уведомление о нарушениях и опасных ситуациях
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            расширенный анализ профессионализма и компетенций сотрудников
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            получение спец условий от страховых компаний за рост уровня безопасности
+                                        </div>                   
+                                    </div>
+                                    <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-tab__body answer-tab__body" id="map9">
+                            <div class="answer-tab__content">
+                                <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                                <div class="answer-tab__inner answer-inner2">
+                                    <div class="answer-subtitle2">Дистанционный (онлайн) медосмотр водителей
+                                    </div>
+                                    <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                                    <div class="advice-blog__item-ul">
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            повышение качества осмотров, исключение чел. фактора
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            снижение числа ЧС в рейсе/на предприятии
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            сокращение финансовых и юридических рисков
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            оптимизация количества медицинских рабочих мест
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            защита репутации предприятия
+                                        </div>         
+                                    </div>
+                                    <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-tab answer-tab">
+                        <div class="contact-tab__nav contact-tab__nav3">
+                            <a href="#map10" class="answer-tab__btn answer-tab__btn3 map-active3" data-toggle="tab">5 Страховая
+                                телематика</a>
+                        </div>
+                        <div class="contact-tab__body answer-tab__body map-active3" id="map10">
+                            <div class="answer-tab__content">
+                                <img src="./images/monitoring-tab_06.jpg" alt="texnika-img" class="answer-tab__img">
+                                <div class="answer-tab__inner answer-inner2">
+                                    <div class="answer-subtitle2">Дистанционный (онлайн) медосмотр водителей
+                                    </div>
+                                    <div class="answer-tab__inner-title answer-title2">Ваши возможности</div>
+                                    <div class="advice-blog__item-ul">
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            выявление рисков и опасных тенденций вождения
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            снижение убыточности до 2,5 раз
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            исключение мошенничества
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            повышение уровня лояльности клиентов
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            исключение рисков нецелевого использования техники
+                                        </div>
+                                        <div class="advice-blog__item-list">
+                                            <span></span>
+                                            реконструкция обстоятельств ДТП и его «прозрачный» разбор
+                                        </div>    
+                                    </div>
+                                    <a href="#" class="answer-tab__inner-btn answer-btn2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -445,11 +677,12 @@
                         Помимо классической «точки на карте» и контроля топлива 
                         посредством ДУТ, вы можете контролировать множество других 
                         параметров для снижения затрат на содержание автопарка, 
-                        увеличения выработку и повышения безопасности. 
+                        увеличения выработку и повышения безопасности. <span></span>
                         Различные датчики (более 2000 видов) помогают осуществлять 
                         тотальный контроль за техникой, персоналом и выполнением работ.  
                     </div>
-                    <ul class="advice-blog__item-ul gazel-blog__ul">
+                    <div class="gazel-something">
+                        <ul class="advice-blog__item-ul gazel-blog__ul">
                         <li class="advice-blog__item-list"><span></span>
                             Широкий выбор готовых и проверенных комбинаций 
                             для решения ваших задач
@@ -465,6 +698,7 @@
                         Закажите бесплатную экспертизу на технике и получите 
                         персональное коммерческое предложение, учитывающие 
                         ваши задачи и бюджеты
+                    </div>
                     </div>
                 </div>
                 <div class="gazel-blog__media">
@@ -712,18 +946,39 @@
                     </div>
                 </div>
             </div>
+            <div class="gazel-blog__content gazel-blog__content2">
+                <div class="gazel-something gazel-something2">
+                    <ul class="advice-blog__item-ul gazel-blog__ul">
+                    <li class="advice-blog__item-list"><span></span>
+                        Широкий выбор готовых и проверенных комбинаций 
+                        для решения ваших задач
+                    </li>
+                    <li class="advice-blog__item-list"><span></span>
+                        Официальные представители ведущих марок оборудования
+                    </li>
+                    <li class="advice-blog__item-list"><span></span>
+                        Большой срок гарантии на оборудование
+                    </li>
+                </ul>
+                <div class="gazel-blog__content-text">
+                    Закажите бесплатную экспертизу на технике и получите 
+                    персональное коммерческое предложение, учитывающие 
+                    ваши задачи и бюджеты
+                </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <section id="consult" class="consult">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <div class="consult-picture">
                         <img src="./images/consult-img_03.png" alt="consult-img_03" class="consult-picture__img">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                   <div class="consult-assist">
                       <div class="consult-assist__title">
                           Консультация от эксперта
@@ -745,7 +1000,7 @@
                         </div>
                         <div class="consult-form__wrapper">
                             <div>
-                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий*"></textarea>
+                                <textarea type="text" name="message" class="consult-form__message consult-form__input" placeholder="Комментарий"></textarea>
                             </div>
                         </div>
                         
@@ -761,15 +1016,29 @@
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -821,10 +1090,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -858,10 +1127,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -889,17 +1158,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">
@@ -927,6 +1196,6 @@
             </div>
         </div>
     </footer>
-    
+</div>   
 </body>
 </html>

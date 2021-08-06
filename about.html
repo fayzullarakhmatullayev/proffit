@@ -28,9 +28,18 @@
             <nav class="nav">
                 <a href="/" class="logo"><img src="./images/logo.png" class="logo-img" alt="logo"></a>
                 <ul class="nav-menu">
+                    <li class="nav-menu__close">
+                        <div class="span-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
                     <li class="nav-menu__list">
-                        <a href="solutions.html" class="nav-menu__link nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
+                        <a href="solutions.html" class="nav-menu__link nav-menu__link-one nav-menu__dropdown">Решения <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-one">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="solutions.html" class="nav-dropdown__link">Общая решения</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="monitoring.html" class="nav-dropdown__link">Мониторинг транспорта </a>
                             </li>  
@@ -80,9 +89,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="industries.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="industries.html" class="nav-menu__link nav-menu__link-two   nav-menu__dropdown">
                             Для кого <i class="fa fa-chevron-down"></i></a>
                         <ul class="nav-dropdown nav-dropdown-two">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="industries.html" class="nav-dropdown__link">Отраслевые задачи</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Грузовой транспорт </a>
                             </li>  
@@ -116,9 +128,12 @@
                         </ul>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="oborudovaniya.html" class="nav-menu__link  nav-menu__dropdown">
+                        <a href="oborudovaniya.html" class="nav-menu__link nav-menu__link-three nav-menu__dropdown">
                             Оборудование <i class="fa fa-chevron-down"></i></a>
-                        <ul class="nav-dropdown">
+                        <ul class="nav-dropdown nav-dropdown-three">
+                            <li class="nav-dropdown__list nav-dropdown__list-mobile">
+                                <a href="oborudovaniya.html" class="nav-dropdown__link">Страница оборудования</a>
+                            </li>  
                             <li class="nav-dropdown__list">
                                 <a href="#" class="nav-dropdown__link">Бортовой контроллер</a>
                             </li>  
@@ -155,12 +170,20 @@
                         <a href="about.html" class="nav-menu__link">О компании</a>
                     </li>
                     <li class="nav-menu__list">
-                        <a href="contact.html" class="nav-menu__link">Контакты</a>
+                        <a href="contact.html" class="nav-menu__link nav-menu__link-last">Контакты</a>
                     </li>
                 </ul>
                 <div class="nav-contact">
                     <a href="tel:88003332474" class="nav-contact__phone">8 800 333 24 74</a>
-                    <a href="#" class="nav-contact__order">Заказать звонок</a>
+                    <a href="#consult" class="nav-contact__order">Заказать звонок</a>
+                </div>
+                <div class="nav-mobile">
+                    <a href="tel:88003332474" class="nav-mobile__contact"><img src="./images/icons/phone-icon_03.png" alt="phone-icon_03" class="nav-mobile__contact-img"></a>
+                    <div class="nav-mobile__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -169,11 +192,13 @@
     
     <section class="about-intro">
         <div class="container">
-            <div class="about-intro__title-first">
-                ведущие интеграторы
-            </div>
-            <div class="about-intro__title-second">
-                систем контроля автопарков
+            <div class="about-intro__wrapper">
+                <div class="about-intro__title-first">
+                    ведущие интеграторы
+                </div>
+                <div class="about-intro__title-second">
+                    систем контроля автопарков
+                </div>
             </div>
         </div>
     </section>
@@ -226,6 +251,47 @@
                     </div>
                 </div>
             </div>
+            <div class="about-paralix__slider">
+                <div>
+                    <div class="about-paralix__card">
+                        <div class="about-paralix__card-title">
+                            честная бизнес
+                            модель
+                        </div>
+                        <div class="about-paralix__card-text">
+                            В отличии от многих, нам 
+                            действительно выгодно, чтобы
+                            у вас все работало - все выезды 
+                            и ремонты в рамках абонплаты
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-paralix__card">
+                        <div class="about-paralix__card-title about-paralix__card-title-second">
+                            сохранение баланса
+                        </div>
+                        <div class="about-paralix__card-text">
+                            Предоставляем самые 
+                            современные, но в то же время
+                            проверенные решения
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-paralix__card">
+                        <div class="about-paralix__card-title">
+                            эффективность
+                            в простоте                                               
+                        </div>
+                        <div class="about-paralix__card-text">
+                            Сложные задачи могут 
+                            быть решены простыми 
+                            в использовании способами                                               
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -257,27 +323,30 @@
                 <div class="partners-blog__items">
                     <img src="./images/partners-icon8.png" alt="partners-icon8" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items hidden__items">
                     <img src="./images/partners-icon9.png" alt="partners-icon9" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items hidden__items">
                     <img src="./images/partners-icon10.png" alt="partners-icon10" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items hidden__items">
                     <img src="./images/partners-icon11.png" alt="partners-icon11" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items hidden__items">
                     <img src="./images/partners-icon12.png" alt="partners-icon12" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon13.png" alt="partners-icon13" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon14.png" alt="partners-icon14" class="partners-blog__items-img">
                 </div>
-                <div class="partners-blog__items">
+                <div class="partners-blog__items partners-blog__items2">
                     <img src="./images/partners-icon15.png" alt="partners-icon15" class="partners-blog__items-img">
                 </div>
+            </div>
+            <div class="solution-blog__btn-wrapper">
+                <a href="#" class="solution-blog__btn partners-blog__btn">Больше клиентов <img src="./images/icons/cheked-icon.png" alt="cheked-icon" class="solution-blog__icon"></a>
             </div>
         </div>
     </section>
@@ -339,6 +408,60 @@
                     </div>
                 </div>
             </div>
+            <div class="numbers__slider">
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number js-about-number">24,000</div>
+                        <div class="about-numbers__item-text">
+                            транспортных средств
+                            на обслуживании
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number js-about-number">400</div>
+                        <div class="about-numbers__item-text">
+                            машин за 5 дней -
+                            рекорд скорости установок
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number"><span class="js-about-number">700</span>+</div>
+                        <div class="about-numbers__item-text">
+                            постоянных клиентов
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number js-about-number">1500</div>
+                        <div class="about-numbers__item-text about-numbers__item-text-last">
+                            реализованных проектов
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number js-about-number">100,000</div>
+                        <div class="about-numbers__item-text">
+                            единиц оборудованной
+                            техники
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="about-numbers__item">
+                        <div class="about-numbers__item-number js-about-number">15</div>
+                        <div class="about-numbers__item-text">
+                            лет истории успеха
+                            компании
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -346,9 +469,9 @@
         <div class="container">
             <div class="title"><span class="title-inner">ПОМОГАЕМ РАЗВИВАТЬСЯ</span> НАШИМ КЛИЕНТАМ</div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-12">
                     <div class="about-support__items">
-                        <div class="about-support__title">Даем реальный выбор</div>
+                        <div class="about-support__title about-support__title1">Даем реальный выбор  <i class="fa fa-chevron-down"></i></div>
                         <div class="about-support__wrapper">
                             <div class="about-support__list">
                                 <span></span>
@@ -365,18 +488,19 @@
                         </div>
                     </div> 
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-12">
                     <div class="about-support__items">
                         <div class="about-support__title">
                             Повышаем вашу 
                             технологичность
+                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div class="about-support__wrapper">
                             <div class="about-support__list">
                                 <span></span>
                                 постоянное обновление 
                                 и расширение линейки 
-                                предложений
+                                предложений 
                             </div>
                             <div class="about-support__list">
                                 <span></span>
@@ -386,12 +510,13 @@
                         </div>
                     </div> 
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-lg-4 col-md-12">
                     <div class="about-support__items">
                         <div class="about-support__title about-support__title-last">
                             разрабатываем
                             и адаптируем 
-                            решения                            
+                            решения          
+                            <i class="fa fa-chevron-down"></i>                  
                         </div>
                         <div class="about-support__wrapper">
                             <div class="about-support__list about-support__list-last">
@@ -415,28 +540,32 @@
     
     <section class="about-resurs">
         <div class="container">
-            <div class="about-resurs__title">РЕСУРСЫ</div>
+            <div class="title">РЕСУРСЫ</div>
             <div class="about-resurs__img">
                 <img class="about-resurs-img" src="./images/icons/resourses-img_03.png" alt="resourses-img">
             </div>
             <div class="about-resurs__wrapper">
                 <div class="about-resurs__items">
+                    <img class="about-resurs-img2" src="./images/icons/about-resurs-img1.png" alt="about-resurs-img1">
                     Обширная экспертиза 
                     в разных отраслях
                     и областях
                 </div>
                 <div class="about-resurs__items">
+                    <img class="about-resurs-img2" src="./images/icons/about-resurs-img2.png" alt="about-resurs-img1">
                     Значительная материально-
                     техническая база 
                     для выполнения масштабных
                     задач
                 </div>
                 <div class="about-resurs__items">
+                    <img class="about-resurs-img2" src="./images/icons/about-resurs-img3.png" alt="about-resurs-img1">
                     Технологии, в том числе
                     ставшие отраслевым
                     стандартом
                 </div>
                 <div class="about-resurs__items">
+                    <img class="about-resurs-img2" src="./images/icons/about-resurs-img4.png" alt="about-resurs-img1">
                     Профессиональная, 
                     устойчивая команда
                     практиков
@@ -448,11 +577,25 @@
     
     <footer class="footer">
         <div class="container">
+          <div class="footer-blog__contact footer-blog__contact2">
+              <div class="footer-blog__contact2-wrapper">
+                  <a href="tel:88003332474" class="footer-blog__phone">8 800 333 24 74</a>
+                  <a href="mailto:sales@proffit.ru" class="footer-blog__mail">sales@proffit.ru</a>
+              </div>
+              <div class="footer-blog__social">
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon1.png" alt="articles-icon1" class="footer-blog__social-img">
+                    </a>
+                    <a href="#" class="footer-blog__social-link">
+                      <img src="./images/icons/articles-icon2.png" alt="articles-icon2" class="footer-blog__social-img">
+                    </a>
+              </div>
+          </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4 col-sm-12">
                     <div class="footer-blog">
-                        <a href="solutions.html" class="footer-blog__title">Решения</a>
-                        <ul class="footer-blog__menu">
+                        <a href="solutions.html" class="footer-blog__title footer-blog__title1">Решения <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu1">
                               <li class="footer-blog__list">
                                 <a href="monitoring.html" class="footer-blog__link">Мониторинг транспорта</a>
                               </li>
@@ -504,10 +647,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="industries.html" class="footer-blog__title">Для кого</a>
-                        <ul class="footer-blog__menu">
+                        <a href="industries.html" class="footer-blog__title footer-blog__title2">Для кого <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu2">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Грузовой транспорт</a>
                               </li>
@@ -541,10 +684,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-3 col-sm-12">
                     <div class="footer-blog">
-                        <a href="oborudovaniya.html" class="footer-blog__title">Оборудование</a>
-                        <ul class="footer-blog__menu">
+                        <a href="oborudovaniya.html" class="footer-blog__title footer-blog__title3">Оборудование <i class="fa fa-chevron-down"></i></a>
+                        <ul class="footer-blog__menu footer-blog__menu3">
                               <li class="footer-blog__list">
                                 <a href="" class="footer-blog__link">Бортовой контроллер</a>
                               </li>
@@ -572,17 +715,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-2 col-sm-12">
                     <div class="footer-blog footer-blog2">
-                        <ul class="footer-blog__menu">
+                        <ul class="footer-blog__menu-items">
                               <li class="footer-blog__list">
-                                <a href="blog.html" class="footer-blog__link2">Блог</a>
+                                <a href="blog.html" class="footer-blog__link2">Блог <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="about.html" class="footer-blog__link2">О компании</a>
+                                <a href="about.html" class="footer-blog__link2">О компании <i class="fa fa-chevron-down"></i></a>
                               </li>
                               <li class="footer-blog__list">
-                                <a href="contact.html" class="footer-blog__link2">Контакты</a>
+                                <a href="contact.html" class="footer-blog__link2">Контакты <i class="fa fa-chevron-down"></i></a>
                               </li>
                         </ul>
                         <div class="footer-blog__contact">
