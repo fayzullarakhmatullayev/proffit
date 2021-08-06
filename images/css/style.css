@@ -8008,6 +8008,7 @@ body {
     justify-content: space-between;
     width: 100%;
     font-weight: 500;
+    cursor: pointer;
   }
 
   .footer-blog__title .fa {
