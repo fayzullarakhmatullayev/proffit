@@ -124,6 +124,144 @@ $(document).ready(function () {
         prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
         nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>' 
       });
+      $('.about-paralix__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        dots: true,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 1199,
+                 settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                }
+            },
+            {
+              breakpoint: 991,
+               settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1,
+                      infinite: true,
+              }
+            },
+            {
+              breakpoint: 575,
+               settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+              }
+            },
+            {
+              breakpoint: 0,
+               settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+              }
+            },
+        ]
+      });
+      
+      $('.packets-slider').slick({
+        mobileFirst: true,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+        {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+        {
+            breakpoint: 991,
+             settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 963,
+             settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        {
+            breakpoint: 0,
+             settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        },
+        ]
+      });
+      $('.numbers__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 727,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots: true
+            }
+          }
+        ]
+      });
+      $(".control-slider, .fuel-info__slider").slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 727,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          }
+        ]
+      })
+      $('.answer-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
+      });
+      $('.why-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true, 
+        prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 727,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      });
       $(document).on('click', '.solution-blog__btn', function (e) {
         e.preventDefault();
         $('.solution-hidden').slideDown(300);
@@ -191,7 +329,11 @@ $(document).ready(function () {
       e.preventDefault();
       $('.digital-table__wrapper').slideToggle(300)
     })
-    $('.intro-content__btn, .nav-contact__order, .oborod-nav__link').click(function (e) {
+    $(document).on('click', '.digital-table-btn', function (e) {
+      e.preventDefault();
+      $('.digital-table__wrapper').slideUp(300)
+    })
+    $('.intro-content__btn, .nav-contact__order, .oborod-nav__link, .oborod-blog__btn').click(function (e) {
       e.preventDefault();
       let href = $(this).attr('href');
 
@@ -271,109 +413,12 @@ $(document).ready(function () {
     e.preventDefault();
     $('.footer-blog__menu3').slideToggle(300);
   })
-  $('.about-paralix__slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    mobileFirst: true,
-    dots: true,
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
-    responsive: [
-        {
-            breakpoint: 9999,
-            settings: "unslick"
-        },
-        {
-            breakpoint: 1199,
-             settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-            }
-        },
-        {
-          breakpoint: 991,
-           settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  infinite: true,
-          }
-        },
-        {
-          breakpoint: 575,
-           settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  infinite: true,
-          }
-        },
-        {
-          breakpoint: 0,
-           settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  infinite: true,
-          }
-        },
-    ]
-  });
-  
-  $('.packets-slider').slick({
-    mobileFirst: true,
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
-    responsive: [
-    {
-        breakpoint: 9999,
-        settings: "unslick"
-    },
-    {
-        breakpoint: 991,
-         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-        }
-    },
-    {
-        breakpoint: 963,
-         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-        }
-    },
-    {
-        breakpoint: 0,
-         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-        }
-    },
-    ]
-  })
+
   $(document).on('click', '.partners-blog__btn', function(e){
     e.preventDefault();
     $('.hidden__items').slideDown(300).css('display', 'flex');
   })
-  $('.numbers__slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 727,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots: true
-        }
-      }
-    ]
-  })
+ 
   $(function(){
     $(window).bind("resize",function(){
      if($(this).width() < 991){
@@ -396,43 +441,32 @@ $(document).ready(function () {
         $('.about-support__wrapper').slideUp();
     }
   })
-  $(".control-slider, .fuel-info__slider").slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    dots: true,
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 727,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true
-        }
-      }
-    ]
+  $(document).on('click', '.blog-page__share', function(e){
+    e.preventDefault();
+    $('.blog-page__social').slideToggle(300);
   })
-  $('.answer-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>'
-  })
-  $('.why-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: true, 
-    prevArrow: '<button class="prev-btn slick-button"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow: '<button class="next-btn slick-button"><i class="fa fa-chevron-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 727,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
+  $(function () {
+    $('.consult-form__phone').inputmask("+(999) 999999999");
+});
+  $(document).on('submit', '.consult-form', function(){
+    const inputs = document.querySelectorAll('.js-input');
+    let success = document.createElement('div');
+    let consultWrapper = document.querySelector('.consult-wrapper');
+    success = `
+      <div class="success-blog">
+          <div class="success-blog__title">Заявка отправлена</div>
+          <div class="success-blog__text">
+              Спасибо за обращение!
+          </div>
+          <div class="success-blog__text">
+              В течение 1 дня с Вами свяжется наш специалист
+          </div>
+      </div>
+    `;
+      if(inputs.value != ''){
+        $('.consult-assist').css('display', 'none');
+        consultWrapper.innerHTML = success;
+        return false;
       }
-    ]
   })
 });
