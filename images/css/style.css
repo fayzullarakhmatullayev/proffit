@@ -1449,7 +1449,7 @@ body {
 .article-slider .prev-btn .fa {
   color: #3e4a74;
   margin-right: 3px;
-  margin-top: 3px;
+  margin-bottom: 1px;
 }
 
 .article-slider .next-btn {
@@ -1459,7 +1459,7 @@ body {
 .article-slider .next-btn .fa {
   color: #3e4a74;
   margin-left: 3px;
-  margin-top: 3px;
+  margin-bottom: 1px;
 }
 
 .article-slider .slick-dots {
